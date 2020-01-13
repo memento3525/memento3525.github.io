@@ -1,5 +1,5 @@
 ---
-name: TheMoment
+name: 더 모멘트(TheMoment)
 tools: [인디, 팀개발, 유니티, 아트]
 image: /assets/img/TheMoment_thumb.jpg
 description: TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.
@@ -18,7 +18,7 @@ TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.<br/>
 
 * 유니티 엔진 C# 프로젝트 
 * 모바일 (AOS)
-* 
+* 기획, 아트, 프로그래밍 대학생 3인팀
 
 <br/>
 
@@ -26,8 +26,9 @@ TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.<br/>
 {% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
-* 
-* 
+* 3D 아트 / 이펙트 파트 전체
+* 그래픽스 최적화
+* 서브 클라이언트 프로그래머
 
 <br/>
 
@@ -35,7 +36,8 @@ TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.<br/>
 {% endcapture %}
 {% include elements/list.html title="전시" %}
 
-* 
+* 2016 BIC / 지스타 BIC 특별관 전시
+* 2016 GIGDC 대학부 제작부분 특별상
 
 <br/>
 
@@ -51,7 +53,7 @@ TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.<br/>
 
 <br/>
 <center><b>플레이 영상</b></center>
-<center> FPS 조작 </center>
+<center> FPS 조작의 플랫포머 퍼즐게임입니다. </center>
 
 <br/>
 
