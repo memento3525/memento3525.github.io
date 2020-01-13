@@ -14,8 +14,8 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 
 
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="프로젝트 사양" %}
 
 * 언리얼 엔진 블루프린트 프로젝트 
@@ -25,8 +25,8 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
 * 회사 프로젝트 1인 개발
@@ -34,8 +34,8 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="전시" %}
 
 * 2019 경주 엑스포 VR 체험관 전시
@@ -46,8 +46,8 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 
 
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="플레이 영상" %}
 
 {% include elements/video.html id="gLJGSXmu1sA" %}
