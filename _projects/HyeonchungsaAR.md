@@ -7,8 +7,8 @@ description: 현충사 AR은 모바일 플랫폼의 AR앱 입니다.
 
 # 현충사AR (HyeonchungsaAR)
 
-현충사 AR은 모바일 플랫폼의 AR앱 입니다. <br/>
-e.
+현충사 AR은 Google AR Core과 GPS를 이용한 AR앱 입니다. <br/>
+
 
 {% include elements/figure.html image="/assets/img/HyeonAR_main.jpg" %}
 
@@ -29,8 +29,8 @@ e.
 {% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
-* 
-* 
+* 클라이언트 전체
+* 이펙트는 에셋스토어 에셋 수정
 
 <br/>
 
@@ -38,7 +38,7 @@ e.
 {% endcapture %}
 {% include elements/list.html title="전시" %}
 
-* 
+* 2020년 1월 중 안드로이드 앱 출시예정
 
 <br/>
 
@@ -50,18 +50,11 @@ e.
 {% endcapture %}
 {% include elements/list.html title="플레이 영상" %}
 
-{% include elements/video.html id="gLJGSXmu1sA" %}
+{% include elements/video.html id="aEOz2vDe2To" %}
 
 <br/>
-<center><b>1:1 대전 영상</b></center>
-<center> 워킹 시뮬레이터와 연동하여 다이나믹한 대전 액션을 구현하였습니다. </center>
-
-<br/>
-
-{% include elements/video.html id="wikqG7varVE" %}
-<br/>
-<center><b>무기별 설명 영상</b></center>
-<center> 무기 기획 또한 직접하였기 때문에 VR에서의 다양한 인터렉션을 활용할 수 있는 방향으로 제작하였습니다. </center>
+<center><b>현장 테스트 영상</b></center>
+<center> AR Core를 기반으로 인터렉션 </center>
 
 
 <!--
