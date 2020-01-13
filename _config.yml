@@ -48,12 +48,12 @@ author:
 
 
 ### Pagination ###
- paginate: 6
- paginate_path: "/blog/page-:num/"
+# paginate: 6
+# paginate_path: "/blog/page-:num/"
 
 
 ### Posts Permalink ###
- permalink: blog/:title
+# permalink: blog/:title
 
 
 ### Collections ###
