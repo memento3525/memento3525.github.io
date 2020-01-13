@@ -58,3 +58,4 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 <p class="text-center">
 {% include elements/button.html link="https://github.com/YoussefRaafatNasry/portfolYOU" text="Learn More" %}
 </p>-->
+플레이 영상
