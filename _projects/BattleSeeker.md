@@ -18,7 +18,7 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 {% endcapture %}
 {% include elements/list.html title="프로젝트 사양" %}
 
-* 언리얼 엔진 블루프린트 프로젝트_ 
+* 언리얼 엔진 블루프린트 프로젝트 
 * PC VR (Steam VR / Windows MR)
 * 로컬 네트워크 1:1 대전
 * 매 라운드 7가지의 무기 중 한개를 골라 3판 2선승제로 대전.
@@ -63,8 +63,10 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 <center><b>무기별 설명 영상</b></center>
 <center> 무기 기획 또한 직접하였기 때문에 VR에서의 다양한 인터렉션을 활용할 수 있는 방향으로 제작하였습니다. </center>
 
+<!-- ㅇ -->
+<br/>
+<br/>
 
-<!--
 <p class="text-center">
-{% include elements/button.html link="https://github.com/YoussefRaafatNasry/portfolYOU" text="Learn More" %}
-</p>-->
+{% include elements/button.html link=projects/index.html text="Return" %}
+</p>

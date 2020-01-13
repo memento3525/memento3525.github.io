@@ -62,7 +62,10 @@ e.
 <center> 무기 기획 또한 직접하였기 때문에 VR에서의 다양한 인터렉션을 활용할 수 있는 방향으로 제작하였습니다. </center>
 
 
-<!--
+<!-- ㅇ -->
+<br/>
+<br/>
+
 <p class="text-center">
-{% include elements/button.html link="https://github.com/YoussefRaafatNasry/portfolYOU" text="Learn More" %}
-</p>-->
+{% include elements/button.html link="https://memento3525.github.io/projects/" text="Return" %}
+</p>
