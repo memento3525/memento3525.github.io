@@ -12,8 +12,8 @@ description: PC VR 3:3 FPS AOS 게임 입니다.
 
 
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items -%}
+{% endcapture -%}
 {% include elements/list.html title="프로젝트 사양" %}
 
 * 언리얼 엔진 블루프린트 프로젝트 
@@ -23,8 +23,8 @@ description: PC VR 3:3 FPS AOS 게임 입니다.
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
 * 회사 프로젝트 1인 개발
@@ -32,8 +32,8 @@ description: PC VR 3:3 FPS AOS 게임 입니다.
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="플레이 영상" %}
 
 {% include elements/video.html id="jxHeCDxbxOA" %}

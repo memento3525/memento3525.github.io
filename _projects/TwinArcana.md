@@ -13,8 +13,8 @@ e.
 
 
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="프로젝트 사양" %}
 
 * 유니티 엔진 C# 프로젝트 
@@ -23,8 +23,8 @@ e.
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
 * 
@@ -32,8 +32,8 @@ e.
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="전시" %}
 
 * 
@@ -44,8 +44,8 @@ e.
 
 
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="플레이 영상" %}
 
 {% include elements/video.html id="gLJGSXmu1sA" %}

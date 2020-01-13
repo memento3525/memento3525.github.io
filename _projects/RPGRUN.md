@@ -13,8 +13,8 @@ RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 
 
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="프로젝트 사양" %}
 
 * 유니티 엔진 C# 프로젝트 
@@ -23,8 +23,8 @@ RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
 * 대학생 3인 팀 프로젝트 (프로그래머 / 기획 / 아트)
@@ -32,8 +32,8 @@ RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 
 <br/>
 
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="전시 및 수상" %}
 
 * 2016 GIGDC 대학부 제작부분 은상
@@ -41,14 +41,9 @@ RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 * 2017 제 3회 게임 창조오디션 
 <br/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gLJGSXmu1sA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe src="https://www.youtube.com/embed/gLJGSXmu1sA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-{%- capture list_items -%}
-{%- endcapture -%}
+{% capture list_items %}
+{% endcapture %}
 {% include elements/list.html title="플레이 영상" %}
 
 {% include elements/video.html id="9Aj2gmgNK6E" %}
