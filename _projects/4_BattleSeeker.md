@@ -2,7 +2,7 @@
 name: 배틀시커(BattleSeeker)
 tools: [회사프로젝트, 1인개발, 언리얼]
 image: /assets/img/BattleSeeker_thumb.jpg
-description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
+description: PC VR 1:1 대전 게임
 ---
 
 # 배틀시커 (BattleSeeker)

@@ -2,7 +2,7 @@
 name: 현충사AR
 tools: [회사프로젝트, 팀개발, 유니티, 클라이언트]
 image: /assets/img/HyeonAR_thumb.jpg
-description: 현충사 AR은 모바일 플랫폼의 AR앱 입니다.
+description: 모바일 플랫폼의 AR 현장 체험앱
 ---
 
 # 현충사AR (HyeonchungsaAR)
@@ -54,7 +54,7 @@ description: 현충사 AR은 모바일 플랫폼의 AR앱 입니다.
 
 <br/>
 <center><b>현장 테스트 영상</b></center>
-<center> AR Core를 기반으로 인터렉션 </center>
+<center> AR Core를 기반으로 14개의 챕터를 수행합니다. </center>
 
 
 

@@ -2,7 +2,7 @@
 name: 피어라이즈(FearRise)
 tools: [회사프로젝트, 1인개발, ]
 image: /assets/img/FearRise_thumb.jpg
-description: PC VR 플랫폼의 고소공포체험게임 입니다.
+description: PC VR 고소공포체험게임
 ---
 
 # 피어라이즈 (FearRise)
