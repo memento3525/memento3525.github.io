@@ -36,12 +36,12 @@ TwinArcana는 스킬 카드 수집형 로그라이트RPG 장르의 모바일 게
 
 {% capture list_items %}
 {% endcapture %}
-{% include elements/list.html title="1분 프로모션 영상" %}
+{% include elements/list.html title="플레이 영상" %}
 
-{% include elements/video.html id="C-YTkg_gQnE" %}
+{% include elements/video.html id="-_PtPCcKUoA" %}
 
 <br/>
-<center><b>1:1 대전 영상</b></center>
+<center><b>1분 프로모션 영상</b></center>
 <center> 단편적인 전투위주의 플레이 영상입니다. </center>
 
 <br/>

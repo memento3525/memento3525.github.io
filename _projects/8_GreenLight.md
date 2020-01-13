@@ -22,7 +22,7 @@ description: 대학 학술팀 3D 애니메이션
 
 {% capture list_items %}
 {% endcapture %}
-{% include elements/list.html title="플레이 영상" %}
+{% include elements/list.html title="애니메이션 영상" %}
 
 {% include elements/video.html id="FKBz_Jvthi8" %}
 
