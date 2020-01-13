@@ -18,8 +18,9 @@ TwinArcana는 스킬 카드 수집형 로그라이트RPG 장르의 모바일 게
 {% include elements/list.html title="프로젝트 사양" %}
 
 * 유니티 엔진 C# 프로젝트 
-* 모바일 (AOS)
-* 
+* 모바일 플랫폼(AOS예정)
+* 로그라이크 / RPG 장르
+* 2020년 현재 개발 중인 프로젝트 (경기 게임 아카데미 제출용 프로젝트)
 
 <br/>
 
@@ -27,7 +28,7 @@ TwinArcana는 스킬 카드 수집형 로그라이트RPG 장르의 모바일 게
 {% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
-* 1인개발
+* 인디 1인개발
 * 캐릭터 / UI 스킨을 제외한 리소스는 에셋스토어 사용 
 
 <br/>

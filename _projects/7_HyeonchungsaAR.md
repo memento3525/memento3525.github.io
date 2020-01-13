@@ -18,7 +18,7 @@ description: 모바일 플랫폼의 AR 현장 체험앱
 {% endcapture %}
 {% include elements/list.html title="프로젝트 사양" %}
 
-* 유니티 엔진 C# 프로젝트 
+* Unity 3D C#
 * 모바일 (AOS)
 * ARCore + GPS 기반
 * 현충사의 각 장소에서 게임을 진행
@@ -29,7 +29,8 @@ description: 모바일 플랫폼의 AR 현장 체험앱
 {% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
-* 클라이언트 전체
+* 회사 프로젝트 
+* 클라이언트 1인
 * 이펙트는 에셋스토어 에셋 수정
 
 <br/>
