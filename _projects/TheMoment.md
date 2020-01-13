@@ -1,14 +1,14 @@
 ---
 name: TheMoment
 tools: [인디, 팀개발, 유니티, 아트]
-image: /assets/img/TheMoment_thumb.png
+image: /assets/img/TheMoment_thumb.jpg
 description: TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.
 ---
 
 # TheMoment
 TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.<br/>
 
-{% include elements/figure.html image="/assets/img/TheMoment_main.png" %}
+{% include elements/figure.html image="/assets/img/TheMoment_main.jpg" %}
 
 
 

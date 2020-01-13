@@ -1,7 +1,7 @@
 ---
 name: RPGRUN
 tools: [인디, 팀개발, 유니티, 아트]
-image: /assets/img/RPGRUN_thumb.png
+image: /assets/img/RPGRUN_thumb.jpg
 description: RPGRUN은 런 장르의 모바일 게임 입니다.
 ---
 
@@ -9,7 +9,7 @@ description: RPGRUN은 런 장르의 모바일 게임 입니다.
 RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 
 
-{% include elements/figure.html image="/assets/img/RPGRUN_main.png" %}
+{% include elements/figure.html image="/assets/img/RPGRUN_main.jpg" %}
 
 
 

@@ -1,14 +1,14 @@
 ---
 name: 거너즈 프론티어(Gunner's Frontier)
 tools: [회사프로젝트, 1인개발, 언리얼]
-image: /assets/img/GunnersFrontier_thumb.png
+image: /assets/img/GunnersFrontier_thumb.jpg
 description: PC VR 3:3 FPS AOS 게임 입니다.
 ---
 
 # 거너즈 프론티어 (Gunner's Frontier)
 거너즈 프론티어는 PC VR 3:3 FPS AOS 게임 입니다. 회사 프로젝트지만 1인개발로 모든 과정을 혼자서 진행했습니다.
 
-{% include elements/figure.html image="/assets/img/GunnersFrontier_main.png" %}
+{% include elements/figure.html image="/assets/img/GunnersFrontier_main.jpg" %}
 
 
 

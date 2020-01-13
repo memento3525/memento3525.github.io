@@ -1,7 +1,7 @@
 ---
 name: 현충사AR (HyeonchungsaAR)
 tools: [회사프로젝트, 팀개발, 유니티, 클라이언트]
-image: /assets/img/BattleSeeker_thumb.png
+image: /assets/img/HyeonAR_thumb.jpg
 description: 현충사 AR은 모바일 플랫폼의 AR앱 입니다.
 ---
 
@@ -10,7 +10,7 @@ description: 현충사 AR은 모바일 플랫폼의 AR앱 입니다.
 현충사 AR은 모바일 플랫폼의 AR앱 입니다. <br/>
 e.
 
-{% include elements/figure.html image="/assets/img/BattleSeeker_main.png" %}
+{% include elements/figure.html image="/assets/img/HyeonAR_main.jpg" %}
 
 
 
