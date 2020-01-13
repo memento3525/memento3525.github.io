@@ -53,6 +53,25 @@ RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 <center> 왼쪽의 버튼으로 좌우 이동을 하고, 오른쪽의 스킬 버튼으로 공격합니다. </center>
 
 
+<br/>
+
+{% capture list_items %}
+{% endcapture %}
+{% include elements/list.html title="모델링" %}
+
+<center>
+<div class="sketchfab-embed-wrapper">
+    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/9457cb364bad4cde8fdd95f0ddf2f0d3/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/3d-models/goblin-king-9457cb364bad4cde8fdd95f0ddf2f0d3?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Goblin King</a>
+    by <a href="https://sketchfab.com/memento3525?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">memento3525</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div>
+</center>
+
+
 <!-- ㅇ -->
 <br/>
 <br/>

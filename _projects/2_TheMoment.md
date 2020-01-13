@@ -63,7 +63,7 @@ TheMoment는 3D 플랫포머 퍼즐 장르의 모바일 게임 입니다.<br/>
 
 <center>
 <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="800" height="600" src="https://sketchfab.com/models/b85f48244d044a2eab9431dba41c0757/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/b85f48244d044a2eab9431dba41c0757/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
     <a href="https://sketchfab.com/3d-models/goddess-chronos-b85f48244d044a2eab9431dba41c0757?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Goddess : Chronos</a>
