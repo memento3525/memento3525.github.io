@@ -2,7 +2,7 @@
 name: Gunner's Frontier
 tools: [회사프로젝트, 1인개발, 언리얼]
 image: /assets/img/GunnersFrontier_thumb.jpg
-description: PC VR 3:3 FPS AOS 게임
+description: PC VR 로컬 네트워크 3:3 FPS AOS 게임. FPS 뷰로 진행되는 AOS 게임. 상대 타워를 먼저 부수면 승리
 ---
 
 # 거너즈 프론티어 (Gunner's Frontier)

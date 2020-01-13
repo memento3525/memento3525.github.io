@@ -2,7 +2,7 @@
 name: 트윈 아르카나(TwinArcana)
 tools: [인디, 1인개발, 유니티, 모바일]
 image: /assets/img/BattleSeeker_thumb.jpg
-description: 로그라이트 RPG 모바일 게임
+description: 1인개발 중인 스킬 카드 수집형 로그라이트 RPG 모바일 게임
 ---
 
 # TwinArcana

@@ -2,7 +2,7 @@
 name: 배틀시커(BattleSeeker)
 tools: [회사프로젝트, 1인개발, 언리얼]
 image: /assets/img/BattleSeeker_thumb.jpg
-description: PC VR 1:1 대전 게임
+description: PC VR 로컬 네트워크 1:1 대전 게임. 매 라운드 7가지 무기 중 하나를 선택해 3판 2선승제로 대전
 ---
 
 # 배틀시커 (BattleSeeker)
