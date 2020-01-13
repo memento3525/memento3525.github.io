@@ -2,7 +2,7 @@
 title               : mentum
 description         : >-                               # >- means to ignore newlines until "url:"
                       JiHoon Joo<br>
-                      "Client Programmer"
+                      "Client Programmer.."
 
 url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
 baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
@@ -42,18 +42,18 @@ author:
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-  twitter           : your_username
+# twitter           : your_username
 # vimeo             : your_username
 # youtube           : your_channel_name
 
 
 ### Pagination ###
-paginate: 6
-paginate_path: "/blog/page-:num/"
+# paginate: 6
+# paginate_path: "/blog/page-:num/"
 
 
 ### Posts Permalink ###
-permalink: blog/:title
+# permalink: blog/:title
 
 
 ### Collections ###
