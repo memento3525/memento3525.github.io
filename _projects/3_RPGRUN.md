@@ -39,8 +39,8 @@ RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 * 2016 GIGDC 대학부 제작부분 은상
 * 2016 안양 슈퍼루키 공모전 대상
 * 2017 제 3회 게임 창조오디션 
-<br/>
 
+<br/>
 
 {% capture list_items %}
 {% endcapture %}
@@ -50,11 +50,11 @@ RPGRUN은 런 장르의 모바일 게임 입니다.<br/>
 
 <br/>
 <center><b>플레이 영상</b></center>
-<center>  </center>
+<center> 왼쪽의 버튼으로 좌우 이동을 하고, 오른쪽의 스킬 버튼으로 공격합니다. </center>
 
-<br/>
 
 <!-- ㅇ -->
+<br/>
 <br/>
 <br/>
 

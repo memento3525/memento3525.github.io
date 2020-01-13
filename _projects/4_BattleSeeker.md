@@ -63,10 +63,12 @@ description: 배틀시커는 PC VR 플랫폼의 1:1 대전 게임 입니다.
 <center><b>무기별 설명 영상</b></center>
 <center> 무기 기획 또한 직접하였기 때문에 VR에서의 다양한 인터렉션을 활용할 수 있는 방향으로 제작하였습니다. </center>
 
+
 <!-- ㅇ -->
+<br/>
 <br/>
 <br/>
 
 <p class="text-center">
-{% include elements/button.html link="projects/index.html" text="Return" %}
+{% include elements/button.html link="https://memento3525.github.io/projects/" text="Return" %}
 </p>

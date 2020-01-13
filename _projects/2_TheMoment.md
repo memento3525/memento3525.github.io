@@ -55,9 +55,9 @@ TheMoment는 3D 퍼즐 플랫포머 장르의 모바일 게임 입니다.<br/>
 <center><b>플레이 영상</b></center>
 <center> FPS 조작의 플랫포머 퍼즐게임입니다. </center>
 
-<br/>
 
 <!-- ㅇ -->
+<br/>
 <br/>
 <br/>
 
