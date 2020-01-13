@@ -27,15 +27,16 @@ nav_exclude:                        # Pages with the following paths will be exc
 author:
   name              : John Doe
   image             : "/assets/img/amI.jpg"
-  behance           : your_username
+  steam             : memento3525
+# behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
-  github            : your_username
+  email             : memento3525@gmail.com
+# facebook          : your_username
+#  github            : your_username
 # gitlab            : your_username
 # instagram         : your_username
-  linkedin          : your_username
-  medium            : your_username
+#  linkedin          : your_username
+#  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id

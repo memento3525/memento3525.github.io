@@ -1,17 +1,22 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: 아주대학교 - 미디어학부
+  from: 2011
+  to: 2017
+  description: 미디어학부는 컨텐츠 제작을 위한 전반적인 내용을 배울 수 있었습니다.
+               학생 팀 작업으로 두가지 게임을 만들었습니다 . 
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- title: NC 소프트 - 학생 인턴 3D 그래픽
+  from: 2015
+  to: 2015
+  description: 이때까진 3D 모델러 전공을 생각하고 있었기 때문에, 
+               학생인턴으로 NC 소프트의 캐쥬얼 신규 프로젝트 팀에서 3D 캐릭터 모델링을 담당하였습니다.
+               
+- title: 인디고 엔터테인먼트 - VR / AR 클라이언트 개발
+  from: 2016
+  to: 2020
+  description: BTC 전시용 VR과 AR 컨텐츠의 클라이언트를 담당하였습니다.
+               작은 회사라 인력이 부족해 다른 파트의 작업들도 혼자서 처리해야하는 경우가 많아, 
+               회사 프로젝트지만 1인 개발을 하는 경우가 많았습니다. 
+
+
+

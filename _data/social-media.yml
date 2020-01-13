@@ -1,6 +1,12 @@
 # Get Icons  from : https://fontawesome.com/icons
 # Get Colors from : https://brandcolors.net/
 
+steam:
+  url   : https://steamcommunity.com/id/
+  icon  : fab fa-steam
+  color : 1769ff
+
+
 behance:
   url   : https://www.behance.net/
   icon  : fab fa-behance
