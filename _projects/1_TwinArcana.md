@@ -6,7 +6,7 @@ description: 로그라이트 RPG 모바일 게임
 ---
 
 # TwinArcana
-TwinArcana는 로그라이트RPG 장르의 모바일 게임 입니다.<br/>
+TwinArcana는 스킬 카드 수집형 로그라이트RPG 장르의 모바일 게임 입니다.<br/>
 
 
 {% include elements/figure.html image="/assets/img/BattleSeeker_main.jpg" %}
@@ -27,21 +27,10 @@ TwinArcana는 로그라이트RPG 장르의 모바일 게임 입니다.<br/>
 {% endcapture %}
 {% include elements/list.html title="담당 파트" %}
 
-* 
-* 
+* 1인개발
+* 캐릭터 / UI 스킨을 제외한 리소스는 에셋스토어 사용 
 
 <br/>
-
-{% capture list_items %}
-{% endcapture %}
-{% include elements/list.html title="전시" %}
-
-* 
-
-<br/>
-
-
-
 
 
 {% capture list_items %}
