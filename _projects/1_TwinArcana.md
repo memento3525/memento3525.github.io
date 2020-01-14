@@ -2,11 +2,11 @@
 name: 트윈 아르카나(TwinArcana)
 tools: [인디, 1인개발, 유니티, 모바일]
 image: /assets/img/TwinArcana_thumb.jpg
-description: 1인개발 중인 스킬 카드 수집형 로그라이트 RPG 모바일 게임
+description: 1인개발 중인 스킬 카드 수집형 던전크롤링 RPG 모바일 게임
 ---
 
 # TwinArcana
-TwinArcana는 스킬 카드 수집형 로그라이트RPG 장르의 모바일 게임 입니다.<br/>
+TwinArcana는 스킬 카드 수집형 던전크롤링 RPG 장르의 모바일 게임 입니다.<br/>
 
 
 {% include elements/figure.html image="/assets/img/TwinArcana_main.jpg" %}
