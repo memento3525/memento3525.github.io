@@ -51,7 +51,7 @@ description: 모바일 플랫폼의 AR 현장 체험앱
 {% endcapture %}
 {% include elements/list.html title="플레이 영상" %}
 
-{% include elements/video.html id="aEOz2vDe2To" %}
+{% include elements/video.html id="fex8RNJh-5k" %}
 
 <br/>
 <center><b>현장 테스트 영상</b></center>
