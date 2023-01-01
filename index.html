@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<!-- 기본정보 ================================================== -->
+	<meta charset="utf-8">
+	<title>Resume</title>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon ================================================== -->
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<!-- CSS ================================================== -->
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.2/css/lightbox.min.css">
+
+	<!-- JS ================================================== -->
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="./js/pdfobject.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.2/js/lightbox.min.js"></script>
+</head>
+<body>
+
+	<div class="my-background">
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="leftBox">
+				<div class="profile">
+					<div class="profile-name">
+						<span class="nameText">주지훈</span>
+						<br>
+						<span class="jobText">클라이언트 프로그래머</span>
+					</div>
+					<figure class="profile-image">
+						<img src="./img/profilePicture.png" alt=""> <!-- 프로필 사진 경로 -->
+					</figure>
+					<ul class="profile-information">
+						<li><img src="./img/icon_phone.png"><p>010-4438-3677</p></li>
+						<li><img src="./img/icon_mail.png"><p>memento3525@gmail.com</p></li>
+						<li><img src="./img/icon_location.png"><p>경기도 광명시</p></li>
+						<li><img src="./img/icon_blog.png"><p><span><a href="https://mentum.tistory.com" target="_blank">개인 블로그</a></span></p></li>
+						<li><img src="./img/icon_git.png"><p><span><a href="https://github.com/memento3525/MySampleCode/tree/main/221231" target="_blank">샘플 코드</a></span></p></li>
+					</ul>
+					<div class="profile-information-comment"><i class="fas fa-info-circle"></i> 통화가능시간 10:30-24:00</div>
+				</div>
+			</div>
+
+			<div class="rightRow">
+
+				<header class="tabHeader">
+					<div class="tabBox">
+						<button class="tabButtonItem-home active" onclick="openTab(event, 'tab1')"><i class="fa fa-home" aria-hidden="true"></i></button>
+						<button class="tabButtonItem" onclick="openTab(event, 'tab2')">PROJECT</button>
+						<button class="tabButtonItem" onclick="openTab(event, 'tab3')">APPEAL</button>
+					</div>
+				</header>
+
+				<div class="rightBox">
+
+					<!-- 페이지1 : 디테일 페이지
+				================================================== -->
+					<div id="tab1" class="tabcontent" style="display: block;">
+						<!-- 자기 소개 -->
+						<section class="detail-aboutMe">
+							<div class="pageTitle">
+								게임을 게임답게 만드는,<br> 디테일 구현에 능한 개발자
+							</div>
+							<div class="detail-aboutMe-Desc">
+								평소 스팀 게임을 즐겨 하는 편이며,<br>
+								이를 레퍼런스 삼아 기능 구현 시 UX나 연출 등을 개선하는 것을 좋아합니다.<br><br>
+								특히 <b>연출과 관련된 기능을 구현하는데 자신</b>있습니다.<br>
+								DoTween, TextAnimator 등의 에셋을 적극 활용하며, 이를 통해 <b>빠른 구현을 추구</b>합니다.<br><br>
+							</div>
+						</section>
+
+						<!-- 회사 이력 -->
+						<section class="detail-workingHistory">
+							<!-- 회사 이력 제목 -->
+							<div class="subSectiontitle">
+								<span></span>
+								<p>근무이력</p>
+							</div>
+
+							<!-- 회사 이력 1 -->
+							<div class="workingHistory-item">
+								<div class="detail-workingHistory-companyTitle">
+									<h1>자라나는 씨앗</h1><br>
+									고전 명작을 기반으로 한 스토리게임 제작사. 대표작 ‘다이 크리처’, ‘하이드 앤 씨크’, ‘페치카’.<br><br>
+								</div>
+								<div class="detail-workingHistory-itemBox">
+									<section class="detail-workingHistory-itemBox-left">
+										<span class="job">게임 클라이언트</span><br>
+										1년 7개월<br>
+										<span class="period">2021.05-2022.12</span><br>
+									</section>
+									<section class="detail-workingHistory-itemBox-right">
+										<span class="project">레사 : 체크메이트</span> <span class="projectSub">(모바일 / 프리프로덕션)</span><br>
+										- 프로젝트 시작부터 프리 프로덕션 단계까지 참여<br>
+										- 게임 내 로비 및 메인 게임 플레이 (육성 시스템) 개발<br><br>
+										<span class="project"><a href="https://play.google.com/store/apps/details?id=com.mazm.hydeandseek&hl=ko" rel="noopener" target="_blank">하이드 앤 씨크</a></span> <span class="projectSub">(모바일 / 출시)</span><br>
+										- 프리 프로덕션 단계에서 합류 후 개발 및 출시<br>
+										- 로비 기능 및 인게임 내 전투 시스템 구현<br>
+									</section>
+								</div>
+							</div>
+
+							<!-- 회사 이력 2 -->
+							<div class="workingHistory-item">
+								<div class="detail-workingHistory-companyTitle">
+									<h1>맨텀</h1><br>
+									1인 개발사 창업. 출시작 ‘트윈 아르카나’, ‘더 모멘트’.<br><br>
+								</div>
+								<div class="detail-workingHistory-itemBox">
+									<section class="detail-workingHistory-itemBox-left">
+										<span class="job">1인 개발</span><br>
+										1년 1개월<br>
+										<span class="period">2020.02-2021.03</span><br>
+									</section>
+									<section class="detail-workingHistory-itemBox-right">
+										<span class="project"><a href="https://play.google.com/store/apps/details?id=com.mentum.twinarcana&hl=ko" rel="noopener" target="_blank">트윈 아르카나</a></span> <span class="projectSub">(모바일 / 출시 / 서비스종료)</span><br>
+										- 기획과 프로그래밍 전 작업 1인 개발 (리소스 : 외주 및 구매) <br>
+										<br>
+										<span class="project"><a href="https://play.google.com/store/apps/details?id=com.mentum.themoment&hl=ko" rel="noopener" target="_blank">더 모멘트 : 시간의 신전</a></span> <span class="projectSub">(모바일 / 출시)</span><br>
+										- 대학 졸업작품의 리메이크 (기획자 팀원과 2인 팀개발)<br>
+										- 프로그래밍, 아트 리소스 전체 제작 <br>
+									</section>
+								</div>
+							</div>
+
+							<!-- 회사 이력 3 -->
+							<div class="workingHistory-item">
+								<div class="detail-workingHistory-companyTitle">
+									<h1>인디고 엔터테인먼트</h1><br>
+									VR 하드웨어 및 어드렉션 실감 컨텐츠 개발사.<br><br>
+								</div>
+								<div class="detail-workingHistory-itemBox">
+									<section class="detail-workingHistory-itemBox-left">
+										<span class="job">콘텐츠 클라이언트</span><br>
+										2년 10개월<br>
+										<span class="period">2017.02-2019.12</span><br>
+									</section>
+									<section class="detail-workingHistory-itemBox-right">
+										<span class="project"><a href="https://youtu.be/wikqG7varVE" rel="noopener" target="_blank">Battle Seeker</a></span> <span class="projectSub">(PC-VR / 전시용 콘텐츠)</span><br>
+										- 전시용 콘텐츠로 회사에서 리소스만 지원받아 1인 개발<br>
+										<br>
+										<span class="project"><a href="https://youtu.be/fex8RNJh-5k" rel="noopener" target="_blank">현충사 AR</a></span> <span class="projectSub">(모바일-AR / 납품)</span><br>
+										- 모바일 AR ‘현충사 AR’ 개발 및 납품 (원스토어 출시)<br>
+									</section>
+								</div>
+							</div>
+						</section>
+
+						<!-- 학력 및 교육 -->
+						<section class="detail-educationHistory">
+							<!-- 학력 제목 -->
+							<div class="subSectiontitle">
+								<span></span>
+								<p>학력 및 교육</p>
+							</div>
+
+							<div class="educationHistory-item">
+								<section class="educationHistory-itemBox-left">
+									2020.02-2020.07
+								</section>
+								<section class="educationHistory-itemBox-right">
+									경기 게임 아카데미 창업 과정 8기 <span>경기콘텐츠진흥원</span>
+								</section>
+							</div>
+
+							<div class="educationHistory-item">
+								<section class="educationHistory-itemBox-left">
+									2011.03-2017.02
+								</section>
+								<section class="educationHistory-itemBox-right">
+									아주대학교 미디어학과 학사
+								</section>
+							</div>
+						</section>
+
+						<!-- 기타 경험 -->
+						<section class="detail-otherExperience">
+							<!-- 경험 제목 -->
+							<div class="subSectiontitle">
+								<span></span>
+								<p> 기타 이력 </p>
+							</div>
+
+							<div class="otherExperience-item">
+								2020.06.23<br>
+								<span><a href="https://www.khgames.co.kr/news/articleView.html?idxno=123505" rel="noopener" target="_blank">인터뷰 : 경향게임즈 - 철저한 계획, 준비로 무장한 도전자 '맨텀'</a></span>
+							</div>
+							<div class="otherExperience-item">
+								2016.07.01<br>
+								<span><a href="https://www.inven.co.kr/webzine/news/?news=159124&site=warships" rel="noopener" target="_blank">인터뷰 : 인벤 - 유니티 인증시험 1등 주지훈 학생</a></span>
+							</div>
+
+
+							<div class="otherExperience-item">
+								2016 경기 게임창조오디션 3회 TOP 10 : ‘project RPG RUN’<br>
+								2016 GIGDC 대학부 제작부분 특별상 : ‘더 모멘트 : 시간의 신전’<br>
+								2016 GIGDC 대학부 제작부분 은상 : ‘project RPG RUN’<br>
+								2016 안양 슈퍼루키 공모전 대상 : ‘project RPG RUN’
+							</div>
+
+
+						</section>
+					</div>
+
+					<!-- 페이지2 : 프로젝트
+				================================================== -->
+					<div id="tab2" class="tabcontent" style="display: none;">
+						<div class="pageTitle">
+							이러한 프로젝트를 진행했습니다.
+						</div>
+
+						<div class="projectItem">
+							<div class="subSectiontitle">
+								<span></span>
+								<p>레사 : 체크메이트</p>
+							</div>
+							<div class="projectDesc">
+								프로젝트 시작부터 프리 프로덕션 단계까지 참여<br>
+								(8인 팀) 프로그래머는 클라2, 서버1 구성으로 분업하여 아래 작업들을 담당하였습니다.<br>
+								<br>
+								<p>메인 컨텐츠 (육성 시스템) 개발</p>
+								- 우마무스메와 비슷한 형태로 확률적으로 이벤트가 발생하여 캐릭터의 스탯을 육성하는 메인 컨텐츠 제작<br>
+								<span class="projectDesc-detail">> 이벤트의 출현/제외 조건을 함수 형태로 제공하여 시트에서 사용할 수 있도록 구현.</span><br>
+								<br>
+								<p>시트 기반 대화 연출 시스템 개발</p>
+								- 각 연출 요소를 함수 단위로 제공하여 연출자가 자유롭게 연출할 수 있도록 구현 (약 40종)<br>
+								<span class="projectDesc-detail">> 각 함수는 이름을 기준으로 클래스 인스턴스를 생성하도록 구현하여 각 코드를 연출 시퀀스별로 독립화 함.</span><br>
+
+								<details class="DescDetails">
+									<summary>더 보기 : 연출 시트 & 대화 연출 영상</summary>
+									<b>기획자에게 제공한 연출 시퀀스 문서 / 작성된 연출시트 예시</b><br>
+									<a href="./img/project/sequenceList.PNG" data-title="기획자에게 제공한 연출 시퀀스 문서" data-lightbox="sequence"><img src="./img/project/sequenceList.PNG" style="width: 49%;" alt=""></a>
+									<a href="./img/project/dialogSequence.PNG" data-title="작성된 연출시트 예시" data-lightbox="sequence"><img src="./img/project/dialogSequence.PNG" style="width: 49%;" alt=""></a><br>
+									<div class="video-link" vidUrl="./movie/lessa_talk.mp4">
+										<video muted autoplay loop width="200">
+											<source src="./movie/lessa_talk.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+									<a href="./img/project/dialog_UML.webp" data-title="대화 연출 시스템 UML" data-lightbox="sequence"><img src="./img/project/dialog_UML.webp" style="width: 530px;" alt=""></a><br>
+								</details>
+								<br>
+
+								<p>어드레서블 에셋 시스템을 활용한 리소스 관리 방식 개선</p>
+								- <b>빌드세팅 등록없이 동적으로 번들에서 씬을 로드</b>할 수 있도록 개선<br>
+								<span class="projectDesc-detail">> 개발자가 빌드세팅에 씬을 등록하면서 발생하는 씬 누락 등의 <b>휴먼에러를 방지</b>.</span><br>
+								- IResourceLocation을 활용하여 특정 폴더 하위에 있는 사운드 파일을 이름만으로 로드하는 시스템 작성<br>
+								<span class="projectDesc-detail">> 하위 경로나 파일 형식(.mp3 .wav)에 관계없이 리소스 관리할 수 있도록 개선.</span><br>
+								<br>
+
+								<p>전투 중 스킬 컷씬 연출</p>
+								- DoTween을 사용하여 UI 요소의 움직임 제어.<br>
+								- Amplify Shader를 사용하여 등장-삭제 연출을 위한 쉐이더 작성 및 적용.<br>
+								<details class="DescDetails">
+									<summary>더 보기 : 전투 컷씬 영상</summary>
+
+									<div class="video-link" vidUrl="./movie/lessa_cut2.mp4">
+										<video muted autoplay loop width="300">
+											<source src="./movie/lessa_cut2.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+									<a href="./img/project/shader_node.webp" data-title="쉐이더 노드" data-lightbox="쉐이더 노드"><img src="./img/project/shader_node.webp" style="width: 380px;" alt=""></a><br>
+								</details>
+							</div>
+						</div>
+
+						<div class="projectItem">
+							<div class="subSectiontitle">
+								<span></span>
+								<p>하이드 앤 씨크</p>
+							</div>
+							<div class="projectDesc">
+								<a href="https://www.youtube.com/watch?v=TJL5xt9ty4Y" rel="noopener" target="_blank">트레일러 영상</a> /
+								<a href="https://www.youtube.com/watch?v=-ApdiRnGLak" rel="noopener" target="_blank">유저 플레이 영상</a><br>
+								구글플레이, 앱 스토어 출시, <b>누적 설치 30만+</b><br>
+								프리 프로덕션 단계에서 합류 후 개발 및 출시 / 한글, 영어, 러시아어, 포르투갈어, 스페인어 대응<br>
+								(6인 팀) 프로그래머는 클라2, 서버1 구성으로 분업하여 아래 작업들을 담당하였습니다.<br>
+
+								<br>
+								<p>인게임 전투 기능 개발</p>
+								- 카드를 사용한 턴제 전투 구현<br>
+								- 지속 턴과 스탯변화가 있는 버프, 디버프 시스템 구현<br>
+								- 각 카드 효과를 함수화하여 기획자가 임의로 조립해서 테스트 할 수 있도록 구현<br>
+								- DoTween을 사용한 타임라인 슬라이드, 적 유닛 이동-공격 연출 구현 <b>(이외 모든 게임 내 UI트위닝 구현)</b><br>
+								투 시스템
+								<details class="DescDetails">
+									<summary>더 보기 : 전투 튜토리얼, 전투 영상</summary>
+
+									<div class="video-link" vidUrl="./movie/seek_battle_1.mp4">
+										<video muted autoplay loop width="200">
+											<source src="./movie/seek_battle_1.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+									<div class="video-link" vidUrl="./movie/seek_battle_2.mp4">
+										<video muted autoplay loop width="200">
+											<source src="./movie/seek_battle_2.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+
+									<div class="video-link" vidUrl="./movie/tool_1.webm">
+										<video muted autoplay loop width="350">
+											<source src="./movie/tool_1.webm" type="video/webm">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+
+								</details>
+								<br>
+								<p>게임 로비 / 각종 매니저 개발</p>
+								- 유저 데이터 매니저 및 각종 로비 기능<br>
+								<span class="projectDesc-detail">> 서버 개발자와 협업하여 서버 통신 후 비동기 처리 방식으로 구현</span><br>
+								- UI Stack 매니저 개발 <br>
+								<span class="projectDesc-detail">> 안드로이드 뒤로가기 대응을 위해 Push, Pop 방식으로 UI 관리</span><br>
+								- Addressable Asset System을 사용하여 사운드 및 UI프리팹을 동적 로드하도록 구현<br>
+
+								<details class="DescDetails">
+									<summary>더 보기 : 로비 영상</summary>
+
+									<div class="video-link" vidUrl="./movie/seek_lobby_1.mp4">
+										<video muted autoplay loop width="200">
+											<source src="./movie/seek_lobby_1.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+									<div class="video-link" vidUrl="./movie/seek_lobby_2.mp4">
+										<video muted autoplay loop width="200">
+											<source src="./movie/seek_lobby_2.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+								</details>
+								<br>
+								<p>플러그인 및 SDK 연동</p>
+								- 광고 미디에이션 플랫폼 AD(X) 연동<br>
+								- 구글 및 애플 IAP, 파이어베이스 Analytics<br>
+								<br>
+							</div>
+						</div>
+
+						<div class="projectItem">
+							<div class="subSectiontitle">
+								<span></span>
+								<p>트윈 아르카나</p>
+							</div>
+							<div class="projectDesc">
+								<a href="https://www.youtube.com/watch?v=3P_X5xXKe9U" rel="noopener" target="_blank">트레일러 영상</a> /
+								<a href="https://youtu.be/V5uzweniuXg" rel="noopener" target="_blank">유저 플레이 영상</a><br>
+								구글플레이, 앱 스토어 출시 (현재는 서비스 종료) <b>누적 설치 2만+</b><br>
+								<b>1인 개발</b>로 진행한 프로젝트로 기간은 짧지만 여러가지를 혼자 진행해보면서,<br>
+								버전 관리와 테스트의 중요성에 대해 배운 프로젝트입니다.<br>
+								<br>
+								<p>연계 전투 시스템</p>
+								- 두 캐릭터가 번갈아 가며 연계하는 실시간 턴제 전투시스템
+								<details class="DescDetails">
+									<summary>더 보기 : 연계 전투 영상</summary>
+									<div class="video-link" vidUrl="./movie/twin_chain.mp4">
+										<video muted autoplay loop width="260">
+											<source src="./movie/twin_chain.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+								</details>
+								<br>
+								<p>스킬 카드 시스템 스펙</p>
+								- 2개의 캐릭터가 각 25종의 스킬, 각 스킬당 3개의 특성강화 구현<br>
+								<span class="projectDesc-detail">> 각 스킬 객체가 스탯을 가지도록 구현하여 특성에 따라 스킬의 변화를 관리하기 쉽도록 구현</span><br>
+
+								<details class="DescDetails">
+									<summary>더 보기 : 특성 스킬 예시</summary>
+									<div class="video-link" vidUrl="./movie/twin_p.mp4">
+										<video muted autoplay loop width="800">
+											<source src="./movie/twin_p.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+									<a href="./img/project/twin_skill_stat.png" data-title="twin_skill_stat" data-lightbox="twin_skill_stat"><img src="./img/project/twin_skill_stat.png" alt="" max-width: 700px></a>
+								</details>
+								<br>
+
+								<p>유물 시스템 스펙</p>
+								- 던전에서 획득 가능한 52종의 각기 다른 효과를 지닌 유물 구현<br>
+								<span class="projectDesc-detail">> 발동 조건을 델리게이트로 슬롯화하여 효과 발동 유무 제어</span><br>
+								<details class="DescDetails">
+									<summary>더 보기 : 유물</summary>
+									<a href="./img/project/twin_legacy_1.webp" data-title="twin_legacy" data-lightbox="twin_legacy"><img src="./img/project/twin_legacy_1.webp" alt="" width: 300px></a>
+									<a href="./img/project/twin_legacy_2.webp" data-title="twin_legacy" data-lightbox="twin_legacy"><img src="./img/project/twin_legacy_2.webp" alt="" width: 300px></a>
+								</details>
+
+								<br>
+								<p>던전 탐험과 로그라이크</p>
+								- 절차적으로 자동 생성된 던전 및 자율 이동 탐험 시스템 구현<br>
+								- 랜덤 카드 선택으로 덱 구축, 덱 구성 시스템 구현<br />
+								<details class="DescDetails">
+									<summary>더 보기 : 던전 크롤링과 덱 빌딩</summary>
+									<div class="video-link" vidUrl="./movie/twin_ui_3.mp4">
+										<video muted autoplay loop height="400">
+											<source src="./movie/twin_ui_3.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+									<div class="video-link" vidUrl="./movie/twin_ui_1.mp4">
+										<video muted autoplay loop height="400">
+											<source src="./movie/twin_ui_1.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+									<div class="video-link" vidUrl="./movie/twin_ui_2.mp4">
+										<video muted autoplay loop height="400">
+											<source src="./movie/twin_ui_2.mp4" type="video/mp4">
+											<strong>Your browser does not support the video tag.</strong>
+										</video>
+										<i class='bx bx-play-circle'></i>
+									</div>
+								</details>
+								<br>
+
+								<p>에셋 번들 리소스 관리</p>
+								- 게임 내 일부 리소스를 에셋 번들로 관리<br>
+								- 파이어 베이스 Storage를 연동하여 게임 시작 시 번들 버전 체크 후 업데이트<br>
+								<br>
+								<p>유저 데이터 관리</p>
+								- 파이어베이스 FireStore : 유저 데이터 관리, 서버 공지 등 관리<br>
+								- 파이어베이스 Analytics : 플레이 로그 수집 후 튜토리얼 구간 퍼널 분석<br>
+								- Play NANOO SDK : 랭킹, 우편함, 영수증 검증<br>
+								<br>
+								<p>플러그인 및 SDK 연동</p>
+								- 광고 : Google Admob (미디에이션 : FAN, UnityAds, Applovin)<br>
+								- GPGS, Firebase Cloud Messaging 등<br>
+								<br>
+								<p>그래픽스 최적화</p>
+								- 아틀라스, 캔버스 분할, 머테리얼 통합 등 배칭 조건 관리<br>
+								<span class="projectDesc-detail">> 그래픽스 최적화를 통해 <b>인게임 중 Batches 100이하</b> 유지</span><br>
+								<details class="DescDetails">
+									<summary>더 보기 : (에디터 기준) 전투 중 batches</summary>
+									<a href="./img/project/twinArcana_batch.png" data-title="twinArcana_batch" data-lightbox="twinArcana_batch"><img src="./img/project/twinArcana_batch.png" alt=""></a>
+								</details>
+								<br>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- 페이지3 : 어필
+				================================================== -->
+					<div id="tab3" class="tabcontent" style="display: none;">
+						<div class="appeal">
+							<div class="pageTitle">
+								게임을 즐겨합니다.
+							</div>
+							스팀 게임을 즐겨하며, 한 가지 게임을 깊게 하기 보다는 여러 게임들을 폭넓게 플레이 합니다.<br>
+
+							<details class="DescDetails">
+								<summary>더 보기 : 스팀 프로필</summary>
+								<a href="https://steamcommunity.com/id/memento3525/" rel="noopener" target="_blank">https://steamcommunity.com/id/memento3525/</a><br>
+								<a href="./img/project/steam_recap.webp" data-title="steam_recap" data-lightbox="steam"><img src="./img/project/steam_recap.webp" alt=""></a>
+								<a href="./img/project/steam.webp" data-title="steam" data-lightbox="steam"><img src="./img/project/steam.webp" alt=""></a>
+							</details>
+							<br>
+							평소 즐겨하는 게임 장르는 <b>전략, 생존, 로그라이크, 카드</b> 등이며<br>
+							플레이 해본 게임 중 '비포 더 던' 프로젝트의 방향성과 유사한 게임들은 아래와 같습니다.
+							<details class="DescDetails">
+								<summary>더 보기 : 유사 장르 플레이 내역</summary>
+								<a href="./img/project/steam_game.webp" data-title="steam_game" data-lightbox="steam_game"><img src="./img/project/steam_game.webp" alt=""></a>
+							</details>
+							<br>
+							<br>
+
+
+							<div class="pageTitle">
+								피드백을 나눕니다.
+							</div>
+							팀원들과 가감없는 피드백을 나누기 좋아하는 편이며, 다른 분야라도 서로 방향성을 주고 받는 개발 문화를 선호합니다.
+							<details class="DescDetails">
+								<summary>더 보기 : 사내 피드백 2021-3분기(입사 4개월차)</summary>
+								<div id="pdfView1" style="height:30rem;"></div>
+							</details>
+
+							<details class="DescDetails">
+								<summary>더 보기 : 사내 피드백 2022-3분기(입사 1.2년차)</summary>
+								<div id="pdfView2" style="height:30rem;"></div>
+							</details>
+							<br>
+							<br>
+
+
+							<div class="pageTitle">
+								지속적으로 공유합니다.
+							</div>
+							개발 중간 테스트 과정을 지속적으로 영상으로 공유하여, 팀원들이 개발 과정 중 같은 그림을 그려나갈 수 있도록 합니다.
+							<details class="DescDetails">
+								<summary>더 보기 : 공유된 중간 개발 예시</summary>
+								<a href="./img/project/seek_share2.webp" data-title="seek_share" data-lightbox="seek_share"><img src="./img/project/seek_share2.webp" alt="" width=200></a>
+								<a href="./img/project/seek_share.webp" data-title="seek_share" data-lightbox="seek_share"><img src="./img/project/seek_share.webp" alt=""></a>
+							</details>
+							<br>
+							<br>
+
+							<div class="pageTitle">
+								효율성을 개선합니다.
+							</div>
+							<b>업무 방식을 개선</b>하는 것을 좋아합니다.<br>
+							반복 테스트를 위해 필요없는 로딩이나 연출등을 생략하거나 숏컷을 만들어 두는 방식을 선호합니다.
+							<details class="DescDetails">
+								<summary>더 보기 : Odin으로 만든 테스트용 툴</summary>
+
+								<div class="video-link" vidUrl="./movie/tool_1.webm">
+									<video muted autoplay loop height="200">
+										<source src="./movie/tool_1.webm" type="video/webm">
+										<strong>Your browser does not support the video tag.</strong>
+									</video>
+									<i class='bx bx-play-circle'></i>
+								</div>
+
+								<div class="video-link" vidUrl="./movie/tool_2.webm">
+									<video muted autoplay loop width="295">
+										<source src="./movie/tool_2.webm" type="video/webm">
+										<strong>Your browser does not support the video tag.</strong>
+									</video>
+									<i class='bx bx-play-circle'></i>
+								</div>
+
+								<div class="video-link" vidUrl="./movie/tool_3.webm">
+									<video muted autoplay loop height="200">
+										<source src="./movie/tool_3.webm" type="video/webm">
+										<strong>Your browser does not support the video tag.</strong>
+									</video>
+									<i class='bx bx-play-circle'></i>
+								</div>
+
+							</details>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- 동영상 라이트박스 -->
+		<div class="overlay vid-link" vidUrl="#"></div>
+		<div class="main-vid-box">
+			<div class="videoWrapper" vidUrl="#">
+				<video autoplay="autoplay" class="myVideo" src="" frameborder="0" controls loop muted></video>
+			</div>
+		</div>
+
+		<script>
+			// 이미지 라이트박스
+			lightbox.option({
+				'resizeDuration': 20,
+				'fadeDuration': 20,
+				'imageFadeDuration': 20,
+				'wrapAround': true
+			})
+
+			// 동영상 라이트박스
+			//https://codepad.co/snippet/html5-video-lightbox
+			$(document).ready(function () {
+				$('.video-link').click(function () {
+					$('.myVideo').attr("src", $(this).attr("vidUrl"));
+					$('.overlay').fadeIn(100, function () {
+						$('.main-vid-box').fadeIn(100);
+						$('.close').fadeIn(100);
+					});
+				});
+
+				$('.close, .overlay, .main-vid-box').click(function () {
+					$('.overlay').fadeOut(100);
+					$('.myVideo').attr("src", $(this).attr("vidUrl"));
+					$('.main-vid-box').fadeOut(100);
+					$('.close').fadeOut(100);
+				});
+			});
+		</script>
+		<script>PDFObject.embed("./pdf/2021_3Q.pdf", "#pdfView1");</script>
+		<script>PDFObject.embed("./pdf/2022_3Q.pdf", "#pdfView2");</script>
+</body>
+</html>
