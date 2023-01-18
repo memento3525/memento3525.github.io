@@ -482,12 +482,36 @@ nav ul {
 
 /* ==========================프로젝트================================ */
 
+.projectTable {
+    border-collapse: separate;
+    border-spacing: 0px;
+    border: solid 1px #dce1e8;
+    width: 80%;
+}
+
+    .projectTable th {
+        border: 1px solid #dce1e8;
+        background-color: #fff;
+        padding: 0.2rem;
+    }
+
+    .projectTable td {
+        border: 1px solid #dce1e8;
+        font-weight: 400;
+        font-size: 90%;
+        overflow-wrap: break-word;
+        word-break: keep-all;
+        padding: 0.2rem;
+    }
+
+
 .projectDesc
 {
     line-height: 150%;
 }
 
-.projectDesc img {
+.projectDesc img 
+{
     max-width: 100%;
     max-height: 500px;
     width: auto;
