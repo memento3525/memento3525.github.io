@@ -5,6 +5,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
@@ -14,127 +15,124 @@
 
 :root {
     --myfont: 'Pretendard-Regular';
-
     --base: #eeeeeef5;
     --color: #373a40;
     --point: #cf6916;
 }
 
-body{
+body {
     font-family: var(--myfont);
     font-size: 20px;
     /*overflow-x: hidden;*/
 }
-body b{
-    font-weight: 900;
+
+    body b {
+        font-weight: 900;
+    }
+
+    body p {
+        font-family: var(--myfont);
+    }
+
+    body:before {
+        position: fixed;
+        top: 0;
+        content: "";
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(90deg,#FBB034,#FFDD00); /* 상단 그라디언트 라인 색 */
+        z-index: 100;
+    }
+
+    body:after {
+        position: fixed;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(90deg,#FBB034,#FFDD00); /* 하단 그라디언트 라인 색 */
+    }
+
+    body::-webkit-scrollbar {
+        width: 8px; /* 스크롤바의 너비 */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        height: 30%; /* 스크롤바의 길이 */
+        background: #217af4; /* 스크롤바의 색상 */
+
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: rgba(33, 122, 244, .1); /*스크롤바 뒷 배경 색상*/
+    }
+
+a {
+    text-decoration: underline !important;
+    text-underline-position: under !important;
 }
 
-body p{
-    font-family: var(--myfont);
-}
-body:before {
-    position: fixed;
-    top: 0;
-    content: "";
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(90deg,#FBB034,#FFDD00);  /* 상단 그라디언트 라인 색 */
-    z-index: 100;
-}
-body:after {
-    position: fixed;
-    bottom: 0;
-    content: "";
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(90deg,#FBB034,#FFDD00);  /* 하단 그라디언트 라인 색 */
-}
-body::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바의 너비 */
-}
-
-body::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
-    background: #217af4; /* 스크롤바의 색상 */
-    
-    border-radius: 10px;
-}
-
-body::-webkit-scrollbar-track {
-    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
-}
-
-a{
-    text-decoration: underline !important; 
-    text-underline-position:under !important; 
-}
 span a::after {
-  font-family:"Font Awesome 5 Free";
-  content: ' \f0c1 '; /* 아이콘목록 https://fontawesome.com/v5/search?o=r&m=free */
-  font-weight: 600; 
-  font-size: 80%;
-  letter-spacing: -3px;
+    font-family: "Font Awesome 5 Free";
+    content: ' \f0c1 '; /* 아이콘목록 https://fontawesome.com/v5/search?o=r&m=free */
+    font-weight: 600;
+    font-size: 80%;
+    letter-spacing: -3px;
 }
+
 img a::after {
-  content: '' !important; 
+    content: '' !important;
 }
 
 /* 배경 이미지 */
 
-.my-background{
+.my-background {
     background-image: url("../img/background.png"); /*배경 이미지 파일 */
     background-repeat: repeat;
-    /*background: linear-gradient(0deg,#fcf8d9,#FFFFFF);  /* 상단 그라디언트 라인 색 */
+    /*background: linear-gradient(0deg,#FFFFFF,#ededed);*/ /* 상단 그라디언트 라인 색 */
     opacity: 10%; /* 배경 투명도 */
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: -100;
 }
-
-.my-background2222{
-    background: url("../img/background.png") repeat center center; /*배경 이미지 파일 */
-    background-repeat: repeat;
-    /*background: linear-gradient(0deg,#fcf8d9,#FFFFFF);  /* 상단 그라디언트 라인 색 */
-    opacity: 10%; /* 배경 투명도 */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-}
-
 
 /* 기초 레이아웃 */
 .container {
     display: flex;
     justify-content: center;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 1100px;
     padding-top: 80px;
     padding-bottom: 400px;
 }
-.profile-information li a{
-    text-decoration: underline; 
-    text-underline-position:under;
+
+.profile-information li a {
+    text-decoration: underline;
+    text-underline-position: under;
     target: blank;
 }
 
-.row{
+.row {
     display: flex; /* or inline-flex */
     width: 100%;
 }
-.rightRow{
+
+.rightRow {
     display: block; /* or inline-flex */
     width: 100%;
 }
-.leftBox{
+
+.leftBox {
     display: block;
     width: 25%;
     position: relative;
     min-height: 400px;
     padding-right: 20px;
 }
+
 .rightBox {
     width: 100%;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
@@ -146,27 +144,29 @@ img a::after {
 }
 
 /* 탭 */
-    .portfolioPage{
+.portfolioPage {
     padding: 15px !important;
 }
+
 .tabBox {
     width: 100%;
     height: 65px;
 }
-.tabBox button:hover {
-    /*background-color: #a6a6a6;*/
-    color: #f2bc0a;
-    cursor: pointer;
-    
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    transform: scale(1.1);
-}
-.tabBox button:active {
-    transform: scale(0.95);
-}
 
-.tabButtonItem-home{
+    .tabBox button:hover {
+        /*background-color: #a6a6a6;*/
+        color: #f2bc0a;
+        cursor: pointer;
+        transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transform: scale(1.1);
+    }
+
+    .tabBox button:active {
+        transform: scale(0.95);
+    }
+
+.tabButtonItem-home {
     background: #ffc500 !important;
     -webkit-border-radius: 6px 0 0 6px;
     padding: 0px 20px;
@@ -178,11 +178,13 @@ img a::after {
     line-height: 70px;
     color: #373a40; /* 회색 */
 }
-.tabButtonItem-home.active {
-    color: var(--point);
-    background-color: rgba( 255, 255, 255, 0 );
-}
-.tabButtonItem{
+
+    .tabButtonItem-home.active {
+        color: var(--point);
+        background-color: rgba( 255, 255, 255, 0 );
+    }
+
+.tabButtonItem {
     float: left;
     width: 150px;
     height: 100%;
@@ -193,13 +195,14 @@ img a::after {
     color: #373a40; /* 회색 */
     background-color: rgba( 255, 255, 255, 0 );
 }
-.tabButtonItem.active {
-    color: var(--point);
-    background-color: rgba( 255, 255, 255, 0 );
-}
+
+    .tabButtonItem.active {
+        color: var(--point);
+        background-color: rgba( 255, 255, 255, 0 );
+    }
 
 
-.tabHeader{
+.tabHeader {
     font-family: var(--myfont);
     display: flex;
     position: relative;
@@ -218,56 +221,66 @@ header nav ul li {
     text-align: -webkit-match-parent;
     padding: 0px 10px;
 }
+
 header a::after {
-  content: '';
+    content: '';
 }
+
 nav ul {
     list-style: none;
 }
 
 
 /* ==========================페이지 공통================================ */
-.tabcontent{
+.tabcontent {
     position: relative;
     padding: 30px;
     -moz-animation: fadein 0.3s; /* Firefox */
     -webkit-animation: fadein 0.3s; /* Safari and Chrome */
     -o-animation: fadein 0.3s; /* Opera */
 }
+
 @keyframes fadein {
     from {
         opacity: 0;
     }
-    to {
-        opacity: 1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity: 0;
-    }
+
     to {
         opacity: 1;
     }
 }
 
-.pageTitle{
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.pageTitle {
     font-weight: bold;
     font-size: 50px;
     line-height: 120%;
@@ -277,36 +290,37 @@ nav ul {
     -webkit-text-fill-color: transparent;
 }
 
-.subSectiontitle{
+.subSectiontitle {
     position: relative;
     display: inline-block;
     line-height: 230%;
     margin: 5px 0px 10px 0px;
+}
 
-}
-.subSectiontitle span{
-    position: relative;
-    background-color: #FBB034 !important;
-    position: absolute;
-    height: 70%;
-    width: 5px;
-    bottom: 10%;
-    opacity: 0.8;    
-    left:0;
-    margin-bottom: 3px;
-}
-.subSectiontitle p{
-    margin-left: 15px;
-    position: relative;
-    font-weight: bold;
-    font-size: 30px;
-    background: linear-gradient(to right bottom, #f00, #00f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    .subSectiontitle span {
+        position: relative;
+        background-color: #FBB034 !important;
+        position: absolute;
+        height: 70%;
+        width: 5px;
+        bottom: 10%;
+        opacity: 0.8;
+        left: 0;
+        margin-bottom: 3px;
+    }
+
+    .subSectiontitle p {
+        margin-left: 15px;
+        position: relative;
+        font-weight: bold;
+        font-size: 30px;
+        background: linear-gradient(to right bottom, #f00, #00f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
 /* ==========================프로파일================================ */
-.profile{
+.profile {
     display: inline-block;
     font-family: var(--myfont);
     background: #fff;
@@ -316,47 +330,51 @@ nav ul {
     border-radius: 5px 30px;
 }
 
-.profile-name{
+.profile-name {
     line-height: 140%;
     padding: 20px;
 }
 
-.profile .nameText{
-    font-size:22px;
+.profile .nameText {
+    font-size: 22px;
     font-weight: bold;
 }
 
-.profile .jobText{
-    font-size:15px;
+.profile .jobText {
+    font-size: 15px;
     color: #777777;
 }
 
-.profile-image{
+.profile-image {
     clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
     margin-top: -10px;
 }
 
 /* 프로파일 쪽 세부정보 */
-.profile-information{
+.profile-information {
     padding: 20px;
-    font-size:12px;
+    font-size: 12px;
 }
-.profile-information li{
-    display: flex;
-    height: 40px;
-}
-.profile-information img{
-    width: 26px;
-    height: 26px;
-    vertical-align: middle;
-    opacity: 50%;
-}
-.profile-information p{
-    padding-left: 5px;
-    text-align: center;
-    line-height: 26px;
-}
-.profile-information-comment{
+
+    .profile-information li {
+        display: flex;
+        height: 40px;
+    }
+
+    .profile-information img {
+        width: 26px;
+        height: 26px;
+        vertical-align: middle;
+        opacity: 50%;
+    }
+
+    .profile-information p {
+        padding-left: 5px;
+        text-align: center;
+        line-height: 26px;
+    }
+
+.profile-information-comment {
     color: #9e9e9e;
     text-align: center;
     font-size: 14px;
@@ -368,115 +386,117 @@ nav ul {
 
 /* ==========================기본 이력================================ */
 
-.detail-aboutMe-Desc{
+.detail-aboutMe-Desc {
     font-size: 18px;
     line-height: 140%;
     padding-bottom: 50px;
 }
 
-.workingHistory-item{    
+.workingHistory-item {
     display: inline-box;
     border: dashed 2px #e3e3e3;
     border-radius: 0px 30px;
-
     padding: 30px 20px;
     margin: 0px 0px 20px 0px;
 }
 
-.detail-workingHistory-companyTitle{
+.detail-workingHistory-companyTitle {
     color: #9e9e9e;
     line-height: 90%;
     border-bottom: dashed 2px #e3e3e3;
 }
-.detail-workingHistory-companyTitle h1{
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-}
 
-.detail-workingHistory-itemBox{
+    .detail-workingHistory-companyTitle h1 {
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+.detail-workingHistory-itemBox {
     display: flex;
     padding-top: 10px;
     line-height: 160%;
 }
-.detail-workingHistory-itemBox-left{
+
+.detail-workingHistory-itemBox-left {
     width: 35%;
 }
-.detail-workingHistory-itemBox-left .job{
-    font-weight: bold;
-    font-size: 18px;
-}
-.detail-workingHistory-itemBox-left .period{
-    color: #9e9e9e;
+
+    .detail-workingHistory-itemBox-left .job {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .detail-workingHistory-itemBox-left .period {
+        color: #9e9e9e;
+    }
+
+.detail-workingHistory-itemBox-right {
 }
 
-.detail-workingHistory-itemBox-right{
-}
+    .detail-workingHistory-itemBox-right .project {
+        font-weight: bold;
+        font-size: 18px;
+    }
 
-.detail-workingHistory-itemBox-right .project{
-    font-weight: bold;
-    font-size: 18px;
-}
-.detail-workingHistory-itemBox-right .projectSub{
-    font-size: 14px;
-    color: #9e9e9e;
-}
+    .detail-workingHistory-itemBox-right .projectSub {
+        font-size: 14px;
+        color: #9e9e9e;
+    }
 
 /* 학력 */
-.detail-educationHistory{
+.detail-educationHistory {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.educationHistory-item{ 
-    display: flex;   
+.educationHistory-item {
+    display: flex;
     border: dashed 2px #e3e3e3;
     border-radius: 0px 15px;
-
     padding: 25px 25px;
     margin: 0px 0px 20px 0px;
-
     color: #9e9e9e;
     line-height: 90%;
 }
 
-.educationHistory-itemBox-left{
+.educationHistory-itemBox-left {
     width: 35%;
 }
 
-.educationHistory-itemBox-right{
+.educationHistory-itemBox-right {
     color: black;
     font-weight: bold;
     font-size: 20px;
 }
 
-.educationHistory-itemBox-right span{
-    font-weight: normal;
-    color: #9e9e9e;
-    font-size: 18px;
-}
+    .educationHistory-itemBox-right span {
+        font-weight: normal;
+        color: #9e9e9e;
+        font-size: 18px;
+    }
 
 /* 기타경험 */
-.detail-otherExperience{
+.detail-otherExperience {
     padding-top: 0px;
     padding-bottom: 50px;
 }
-.otherExperience-item{ 
+
+.otherExperience-item {
     display: inline-box;
     border: dashed 2px #e3e3e3;
     border-radius: 0px 15px;
-
     padding: 25px 25px;
     margin: 0px 0px 20px 0px;
-
     color: #9e9e9e;
     line-height: 140%;
 }
-.otherExperience-item span{
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-}
+
+    .otherExperience-item span {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
 
 
 
@@ -505,56 +525,70 @@ nav ul {
     }
 
 
-.projectDesc
-{
+.inlineTitle {
+    font-weight: bold;
+    font-size: 140% !important;
+}
+
+.inlineHR {
+    width: 95%;
+    height: 3px;
+    margin-left: 0;
+    background-color: pink;
+    border: 0;
+}
+
+.projectInline {
+    display: inline-box;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    border: double 2px #e3e3e3;
+}
+
+.projectDesc {
     line-height: 150%;
 }
 
-.projectDesc img 
-{
-    max-width: 100%;
-    max-height: 500px;
-    width: auto;
-    height: auto;
-    display: inline-block;
-}
+    .projectDesc img {
+        max-width: 100%;
+        max-height: 500px;
+        width: auto;
+        height: auto;
+        display: inline-block;
+    }
 
-.projectDesc p
-{
-    font-weight: bold;
-    font-size: 120%;
-    width: auto;
-    padding: 5px 0px;
-    
-    background: linear-gradient(to right bottom, #f00, #00f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
-.projectDesc-detail
-{
+    .projectDesc p {
+        font-weight: bold;
+        font-size: 120%;
+        width: auto;
+        padding: 5px 0px;
+        background: linear-gradient(to right bottom, #f00, #00f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+.projectDesc-detail {
     font-weight: normal !important;
     color: #707070 !important;
     font-size: 100% !important;
     padding: 0px 0px 0px 20px !important;
 }
 
-.DescDetails
-{
+.DescDetails {
     font-weight: normal;
     font-size: 100%;
 }
 
-.DescDetails summary {
-    font-weight: Bold;
-    background: linear-gradient(to right bottom, #4B79A1, #283E51); /* 반갑습니다~ 하는 텍스트 색 */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-}
+    .DescDetails summary {
+        font-weight: Bold;
+        background: linear-gradient(to right bottom, #4B79A1, #283E51); /* 반갑습니다~ 하는 텍스트 색 */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
 
-.projectItem
-{
+.projectItem {
     display: inline-box;
     padding: 20px 20px;
     margin: 30px 0px;
@@ -567,56 +601,56 @@ nav ul {
     line-height: 150%;
 }
 
-.appeal img {
-    max-width: 100%;
-    max-height: 300px;
-    width: auto;
-    height: auto;
-    display: inline-block;
-    padding: 10px 0px;
-}
+    .appeal img {
+        max-width: 100%;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+        display: inline-block;
+        padding: 10px 0px;
+    }
 
 
 /* ==========================동영상 라이트박스================================ */
 
-.video-link{
-    cursor:pointer;
+.video-link {
+    cursor: pointer;
     display: inline-block;
     position: relative;
-    color:#fff;
+    color: #fff;
 }
 
-.overlay{
+.overlay {
     position: fixed;
-    top:0px;
+    top: 0px;
     left: 0px;
-    height:100%;
-    width:100%;
-    z-index:999;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
     background-color: rgba(0, 0, 0, 0.9);
-    opacity:0.9;
-    display:none; 
+    opacity: 0.9;
+    display: none;
     cursor: pointer;
 }
 
-.close{
+.close {
     position: fixed;
-    top:30px;
-    right:30px;
-    width:32px;
-    height:32px;
-    z-index:9999;
-    display:none;
+    top: 30px;
+    right: 30px;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+    display: none;
     cursor: pointer;
 }
 
-.main-vid-box{
+.main-vid-box {
     position: fixed;
     width: 100%;
-    height:100vh;
-    display:none;
-    top:0px;
-    left:0px;
+    height: 100vh;
+    display: none;
+    top: 0px;
+    left: 0px;
     z-index: 999;
     cursor: pointer;
 }
@@ -624,28 +658,29 @@ nav ul {
 
 .videoWrapper {
     display: flex;
-    z-index:999;
-    background-color:#0000066;
-    width:100%;
+    z-index: 999;
+    background-color: #0000066;
+    width: 100%;
     height: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     justify-content: center;
-  align-items: center;
+    align-items: center;
 }
-.videoWrapper video {
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 999;
-	width: auto !important;
-	height: 100% !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border-width: 20px;
-	border-style: solid;
-	border-color: transparent;
-}
+
+    .videoWrapper video {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: auto !important;
+        height: 100% !important;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-width: 20px;
+        border-style: solid;
+        border-color: transparent;
+    }
 
 
 
@@ -659,11 +694,8 @@ footer .footer {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     line-height: 36px;
-    
     width: 100%;
-
     padding: 20px;
-
     margin-bottom: 30px;
     margin-top: 30px;
 }
