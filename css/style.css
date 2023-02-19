@@ -545,6 +545,15 @@ nav ul {
     border: double 2px #e3e3e3;
 }
 
+.samplelink {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    border: skyblue 5px solid;
+    border-radius: 2px;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.1);
+}
+
 .projectDesc {
     line-height: 150%;
 }
