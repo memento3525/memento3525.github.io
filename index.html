@@ -44,7 +44,7 @@
                         <li><img src="./img/icon_blog.png"><p><span><a href="https://mentum.tistory.com" rel="noopener" target="_blank">개인 블로그</a></span></p></li>
                         <li><img src="./img/icon_git.png"><p><span><a href="https://github.com/memento3525/MySampleCode/tree/main/v2" rel="noopener" target="_blank">샘플 코드</a></span></p></li>
                     </ul>
-                    <div class="profile-information-comment"><i class="fas fa-info-circle"></i> 통화선호시간 10:30-24:00 메일, 문자는 즉시 확인합니다.</div>
+                    <div class="profile-information-comment"><i class="fas fa-info-circle"></i> 통화선호시간 10:30-22:00 이메일, 문자는 즉시 확인합니다.</div>
                 </div>
             </div>
 
@@ -122,12 +122,12 @@
                                         <span class="period">2020.02-2021.03</span><br>
                                     </section>
                                     <section class="detail-workingHistory-itemBox-right">
-                                        <span class="project"><a href="https://play.google.com/store/apps/details?id=com.mentum.twinarcana&hl=ko" rel="noopener" target="_blank">트윈 아르카나</a></span> <span class="projectSub">(모바일 / 출시 / 서비스종료)</span><br>
+                                        <span class="project"><a href="https://mentum.tistory.com/443" rel="noopener" target="_blank">트윈 아르카나</a></span> <span class="projectSub">(모바일 / 출시 / 서비스종료)</span><br>
                                         - 기획과 프로그래밍 전 작업 1인 개발 (리소스 : 외주 및 구매) <br>
                                         <br>
                                         <span class="project"><a href="https://play.google.com/store/apps/details?id=com.mentum.themoment&hl=ko" rel="noopener" target="_blank">더 모멘트 : 시간의 신전</a></span> <span class="projectSub">(모바일 / 출시)</span><br>
                                         - 대학 졸업작품의 리메이크 (기획자 팀원과 2인 팀개발)<br>
-                                        - 프로그래밍, 아트 리소스 전체 제작 <br>
+                                        - 프로그래밍 전체 담당 <br>
                                     </section>
                                 </div>
                             </div>
@@ -268,14 +268,14 @@
                                     <span class="projectDesc-detail">> 이벤트의 출현/제외 조건을 함수 형태로 제공하여 시트에서 사용할 수 있도록 구현.</span><br>
                                     <br>
                                     <p>시트 기반 대화 연출 시스템 개발</p>
-                                    - 각 연출 요소를 함수 단위로 제공하여 연출자가 자유롭게 연출할 수 있도록 구현 (약 40종)<br>
+                                    - 각 연출 요소를 커맨드 단위로 캡슐화해 자유롭게 연출할 수 있도록 구현 (약 40종)<br>
                                     <span class="projectDesc-detail">> 각 함수는 이름을 기준으로 클래스 인스턴스를 생성하도록 구현하여 각 코드를 연출 시퀀스별로 독립화 함.</span><br>
 
                                     <details class="DescDetails">
                                         <summary>더 보기 : 연출 시트 & 대화 연출 영상</summary>
-                                        <b>기획자에게 제공한 연출 시퀀스 문서 / 작성된 연출시트 예시</b><br>
+                                        <b>연출 시퀀스 문서 / 작성된 연출시트 예시</b><br>
 
-                                        <a href="./img/project/sequenceList.PNG" data-title="기획자에게 제공한 연출 시퀀스 문서" data-lightbox="sequence"><img src="./img/project/sequenceList.PNG" style="width: 49%;" alt=""></a>
+                                        <a href="./img/project/sequenceList.PNG" data-title="연출 시퀀스 문서" data-lightbox="sequence"><img src="./img/project/sequenceList.PNG" style="width: 49%;" alt=""></a>
                                         <a href="./img/project/dialogSequence.PNG" data-title="작성된 연출시트 예시" data-lightbox="sequence"><img src="./img/project/dialogSequence.PNG" style="width: 49%;" alt=""></a><br>
                                         <div class="video-link" vidUrl="./movie/talk_system.mp4">
                                             <video muted autoplay loop width="200">
@@ -477,12 +477,12 @@
 
                                 <div class="inlineTitle"># 신경 쓴 부분</div>
                                 <div class="projectInline">
-                                    - 3d 게임이기 때문에 <b>그래픽 최적화</b>를 중점적으로 신경 썼습니다. <b>프레임 디버거를 통해 배칭</b>을 확인한 후, 최대한 배칭이 일어날 수 있도록 캔버스를 분할하거나 머테리얼을 통합하고 라이트 맵을 베이킹하였습니다.
+                                    - 3d 게임이기 때문에 <b>그래픽 최적화</b>를 중점적으로 신경 썼습니다. <b>프레임 디버거를 통해 배칭</b>을 확인한 후, 최대한 배칭이 일어날 수 있도록 캔버스를 분할하거나 하이어라키를 조정하고, MeshBaker 에셋으로 메쉬와 머테리얼을 병합하고, Mixed 라이트를 사용하여 라이트 맵을 베이킹하였습니다.
                                 </div>
                                 <br>
                                 <div class="inlineTitle"># 어려웠던 부분</div>
                                 <div class="projectInline">
-                                    - 혼자 개발하면서 가장 부족했던 부분은 <b>테스트</b>입니다. 기능 추가 시 전체구간 테스트를 빠뜨려서 진행 불가 버그가 발생하기도 하고, 라이브로 넘어간 후에는 기존 유저의 데이터를 가지고 신규 기능과 저장 데이터가 충돌하지 않도록 신경을 써야 하는 부분도 어려웠습니다.
+                                    - 혼자 개발하면서 가장 부족했던 부분은 <b>테스트</b>입니다. 기능 추가 시 전체구간 테스트를 빠뜨려서 진행 불가 버그가 발생하기도 하고, 라이브로 넘어간 후에는 기존 플레이 데이터가 있는 계정과 신규 계정을 둘 다 테스트 해야되서 많은 어려움이 있었습니다.
                                 </div>
                                 <br>
 
@@ -556,7 +556,7 @@
                                         </div>
 
                                         <a href="./img/project/backTrackingMaze.gif" data-title="빽 트레킹 미로생성" data-lightbox="twin_maze"><img src="./img/project/backTrackingMaze.gif" alt="" style="height: 300px;"></a>
-                                        <a href="./img/project/ellersMaze.gif" data-title="Eller 알고리즘 미로생성" data-lightbox="twin_maze"><img src="./img/project/ellersMaze.gif" alt=""style="height: 300px;"></a>
+                                        <a href="./img/project/ellersMaze.gif" data-title="Eller 알고리즘 미로생성" data-lightbox="twin_maze"><img src="./img/project/ellersMaze.gif" alt="" style="height: 300px;"></a>
 
                                     </details>
                                     <div class="samplelink">
@@ -575,14 +575,15 @@
                                     <br>
                                     <p>플러그인 및 SDK 연동</p>
                                     - 광고 : Google Admob (미디에이션 : FAN, UnityAds, Applovin)<br>
-                                    - GPGS, Firebase Cloud Messaging 등<br>
+                                    - GPGS, 파이어베이스 Cloud Messaging 등<br>
                                     <br>
                                     <p>그래픽스 최적화</p>
                                     - 아틀라스, 캔버스 분할, 머테리얼 통합 등 배칭 조건 관리<br>
                                     <span class="projectDesc-detail">> 그래픽스 최적화를 통해 <b>인게임 중 Batches 100이하</b> 유지</span><br>
                                     <details class="DescDetails">
                                         <summary>더 보기 : (에디터 기준) 전투 중 batches</summary>
-                                        <a href="./img/project/twinArcana_batch.png" data-title="twinArcana_batch" data-lightbox="twinArcana_batch"><img src="./img/project/twinArcana_batch.png" alt=""></a>
+                                        <a href="./img/project/twinArcana_batch.png" data-title="twinArcana_batch" data-lightbox="twinArcana_batch"><img src="./img/project/twinArcana_batch.png" alt=""></a></br>
+                                        메쉬 병합을 위해 유니티 에셋스토어의 <a href="https://mentum.tistory.com/255" rel="noopener" target="_blank">Mesh Baker</a> 에셋을 사용하였습니다.
                                     </details>
                                 </div>
                             </div>
@@ -598,6 +599,7 @@
                                 게임을 즐겨합니다.
                             </div>
                             스팀 게임을 즐겨하며, 한 가지 게임을 깊게 하기 보다는 여러 게임들을 폭넓게 플레이 합니다.<br>
+                            플레이 해 본 게임을 레퍼런스 삼아 개발하는 게임 또한 발전시킬 수 있도록 고민하고 적용하도록 노력하고 있습니다.<br>
 
                             <details class="DescDetails">
                                 <summary>더 보기 : 스팀 프로필</summary>
@@ -668,6 +670,37 @@
                                     </video>
                                     <i class='bx bx-play-circle'></i>
                                 </div>
+
+                            </details>
+                            <br>
+                            <br>
+
+                            <div class="pageTitle">
+                                연구합니다.
+                            </div>
+                            개인 개발 블로그에 공부한 것들을 기록하고 있습니다.<br>
+                            <details class="DescDetails">
+                                <summary>더 보기 : 개인 블로그 작성예시</summary>
+                                <br />
+                                <b>그래픽스 최적화</b><br />
+                                <a href="https://mentum.tistory.com/583" rel="noopener" target="_blank">유니티 모바일 텍스쳐 압축연구 ETC2, PVRTC, ASTC</a><br />
+                                <a href="https://mentum.tistory.com/55" rel="noopener" target="_blank">유니티 최적화 : 아트 리소스 최적화 기법들</a><br />
+                                <a href="https://mentum.tistory.com/53" rel="noopener" target="_blank">유니티 최적화 : 배칭과 드로우콜</a><br />
+                                <a href="https://mentum.tistory.com/581" rel="noopener" target="_blank">유니티 최적화 : 2D 스프라이트 최적화</a><br />
+                                <a href="https://mentum.tistory.com/585" rel="noopener" target="_blank">스프라이트 아틀라스를 사용할때는 리소스 폴더를 주의하세요</a><br />
+                                <a href="https://mentum.tistory.com/586" rel="noopener" target="_blank">스프라이트 아틀라스를 사용할 때는 이중압축에 주의하세요</a><br />
+                                <br />
+                                <b>유니티 기능연구</b><br />
+                                <a href="https://mentum.tistory.com/653" rel="noopener" target="_blank">유니티 새로운 인풋 시스템 Unity New InputSystem</a><br />
+                                <a href="https://mentum.tistory.com/665" rel="noopener" target="_blank">Unity UIToolkit 연구 1 : 기본 사용법</a><br />
+                                <a href="https://mentum.tistory.com/666" rel="noopener" target="_blank">Unity UIToolkit 연구 2 : UI 배치와 선택자(Selector)</a><br />
+                                <a href="https://mentum.tistory.com/689" rel="noopener" target="_blank">유니티 DOTS 연구1 : Burst Compiler (버스트 컴파일러)</a><br />
+                                <a href="https://mentum.tistory.com/691" rel="noopener" target="_blank">유니티 DOTS 연구2 : Job System(잡 시스템)</a><br />
+                                <br />
+                                <b>트러블 슈팅</b><br />
+                                <a href="https://mentum.tistory.com/615" rel="noopener" target="_blank">Float.Parse not in a correct format 문화권 문제</a><br />
+                                <a href="https://mentum.tistory.com/343" rel="noopener" target="_blank">for 문에서 AddListener 람다식 :  Closure problem</a><br />
+                                <a href="https://mentum.tistory.com/602" rel="noopener" target="_blank">C# eventHandler 중복, Action 중복 방지 하기</a><br />
 
                             </details>
                         </div>
