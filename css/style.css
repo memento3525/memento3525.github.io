@@ -282,7 +282,7 @@ nav ul {
 
 .pageTitle {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 120%;
     padding-bottom: 30px;
     background: linear-gradient(to right bottom, #f00, #00f); /* 반갑습니다~ 하는 텍스트 색 */
@@ -318,6 +318,37 @@ nav ul {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+.codeStyleSectiontitle {
+    position: relative;
+    display: inline-block;
+    line-height: 230%;
+    margin: 5px 0px 10px 0px;
+}
+
+.codeStyleSectiontitle span {
+    position: relative;
+    background-color: #FBB034 !important;
+    position: absolute;
+    height: 70%;
+    width: 5px;
+    bottom: 10%;
+    opacity: 0.8;
+    left: 0;
+    margin-bottom: 3px;
+}
+
+
+    .codeStyleSectiontitle p {
+        margin-left: 15px;
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        background: linear-gradient(to right bottom, #f00, #00f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
 
 /* ==========================프로파일================================ */
 .profile {
