@@ -622,10 +622,21 @@ nav ul {
 
     .DescDetails summary {
         font-weight: Bold;
-        background: linear-gradient(to right bottom, #4B79A1, #283E51); /* 반갑습니다~ 하는 텍스트 색 */
+        background: linear-gradient(to right bottom, #4B79A1, #283E51); /* 파란색 텍스트 색 */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: pointer;
+    }
+
+    .DescDetails .InBox {
+        font-weight: normal;
+        font-size: 100%;
+        background: #f7f7f7;
+        width: 95%;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+        border-radius: 5px 20px;
+        margin: 5px;
+        padding: 20px;
     }
 
 .projectItem {
@@ -637,7 +648,7 @@ nav ul {
 
 
 /* ========================== 어필 ================================ */
-.appeal {
+        .appeal {
     line-height: 150%;
 }
 
