@@ -479,7 +479,7 @@ nav ul {
 /* 학력 */
 .detail-educationHistory {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .educationHistory-item {
@@ -645,7 +645,7 @@ nav ul {
 .projectItem {
     display: inline-box;
     padding: 20px 20px;
-    margin: 30px 0px;
+    margin-bottom: 30px;
     border: dashed 2px #e3e3e3;
 }
 
