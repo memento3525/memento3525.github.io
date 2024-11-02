@@ -346,10 +346,7 @@
                                         ✔ 3D 좌표 상에 스파인 캐릭터들을 배치하여 2.5D 방식의 오토배틀 전투 시스템을 구현했습니다.<br>
                                         <br>
                                         <div class="video-link" vidUrl="./movie/projectB_battle.mp4">
-                                            <video muted autoplay loop width="600">
-                                                <source src="./movie/projectB_battle.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="600" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -375,8 +372,12 @@
                                         ✔ 유닛 그룹 BT 뷰어 (상)<br>
                                         ✔ 유닛의 개별 스킬 1개의 BT (하)<br>
                                         <br>
-                                        <a href="./img/project/projectB_group.png" data-title="projectB_group" data-lightbox="projectB_group"><img src="./img/project/projectB_group.png" style="height: 360px;"></a>
-                                        <a href="./img/project/projectB_skill.png" data-title="projectB_group" data-lightbox="projectB_group"><img src="./img/project/projectB_skill.png" style="height: 360px;"></a>
+                                        <a href="./img/project/projectB_group.png" data-title="projectB_group" data-lightbox="projectB_group">
+                                            <img data-src="./img/project/projectB_group.png" style="height: 360px;" class="lazy-image">
+                                        </a>
+                                        <a href="./img/project/projectB_skill.png" data-title="projectB_group" data-lightbox="projectB_group">
+                                            <img data-src="./img/project/projectB_skill.png" style="height: 360px;" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
 
@@ -395,14 +396,13 @@
                                 <details class="DescDetails">
                                     <summary>더 보기 : 스크립터블 수정 예시 영상</summary>
                                     <div class="InBox">
-                                        <b>✔ 내부의 데이터는 스크립터블로 관리하여 다른 캐릭터라도 같은 데이터의 레퍼런스를 참조하도록 구현</b><br>
-                                        - 기획자가 런타임 중 스크립터블의 내부 데이터를 실시간으로 수정하더라도 즉시 반영되면서 테스트 할 수 있는 환경을 지향
+                                        <b>✔ 내부의 데이터는 스크립터블로 관리하여 참조를 공유하도록 구현</b><br>
+                                        - 기획자가 런타임 중 스크립터블의 내부 데이터를 실시간으로 수정하면서 테스트 할 수 있는 환경을 지향
+                                        <br><br>
+                                        테스트 중 공격 범위를 실시간을 수정하는 예시
                                         <br><br>
                                         <div class="video-link" vidUrl="./movie/projectB_scriptable.mp4">
-                                            <video muted autoplay loop width="600">
-                                                <source src="./movie/projectB_scriptable.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="600" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
 
@@ -421,7 +421,9 @@
                                         <b>✔ 내부 데이터 스크립터블의 공유</b><br>
                                         - ActiveSkill, SKillOption 등은 런타임 시 래퍼 클래스로 감싸서 변하는 부분은 래퍼 클래스에서 관리하고, 변하지 않는 값은 내부의 원본이 리턴하도록 위임하는 방식으로 구현했습니다.
                                         <br><br>
-                                        <a href="./img/project/projectB_battletable.webp" data-title="projectB_battletable" data-lightbox="projectB_battletable"><img src="./img/project/projectB_battletable.webp"></a>
+                                        <a href="./img/project/projectB_battletable.webp" data-title="projectB_battletable" data-lightbox="projectB_battletable">
+                                            <img data-src="./img/project/projectB_battletable.webp" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
 
@@ -440,7 +442,9 @@
                                         - enum의 타입이 맞지 않거나, 타격 타이밍과 데미지 배분률의 갯수가 맞지 않는 등 데이터가 부적절한지 파싱 시 미리 검증합니다.
                                         <br>
                                         <br>
-                                        <a href="./img/project/projectB_tableLog.png" data-title="projectB_tableLog" data-lightbox="projectB_tableLog"><img src="./img/project/projectB_tableLog.png"></a>
+                                        <a href="./img/project/projectB_tableLog.png" data-title="projectB_tableLog" data-lightbox="projectB_tableLog">
+                                            <img data-src="./img/project/projectB_tableLog.png" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
 
@@ -470,40 +474,34 @@
                                         <br>
 
                                         <div class="video-link" vidUrl="./movie/projectB_battleDebug.mp4">
-                                            <video muted autoplay loop width="340">
-                                                <source src="./movie/projectB_battleDebug.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="340" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
 
                                         <div class="video-link" vidUrl="./movie/projectB_dmgMeter.mp4">
-                                            <video muted autoplay loop width="330">
-                                                <source src="./movie/projectB_dmgMeter.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="330" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
                                 </details>
 
                                 <!--
-    <br>
-    <br>
-    <p>이펙터 기술 지원</p>
-    ✓ 2D 이펙트 좌우 플립 기능 구현<br>
-    <div class="projectDesc-detail">
-        - 이펙트가 풀링되면서 생성될 때, 파티클의 각 속성을 시전자의 방향에 따라 플립하여 생성하며,
-        채널링 스킬의 경우 시전 캐릭터의 방향 콜백에 따라 다시 플립되도록 구현
-    </div>
+                                <br>
+                                <br>
+                                <p>이펙터 기술 지원</p>
+                                ✓ 2D 이펙트 좌우 플립 기능 구현<br>
+                                <div class="projectDesc-detail">
+                                    - 이펙트가 풀링되면서 생성될 때, 파티클의 각 속성을 시전자의 방향에 따라 플립하여 생성하며,
+                                    채널링 스킬의 경우 시전 캐릭터의 방향 콜백에 따라 다시 플립되도록 구현
+                                </div>
 
-    ✓ 2.5D 소팅 오더 규칙 정립<br>
-    <div class="projectDesc-detail">
-        - 3D 공간에 스파인을 세워서 구현한 2.5D 방식의 게임이었기에, URP의 Custom Sorting Order를 사용해 소팅 오더를 조정하고 Sprite SortGroup으로 바닥과 피사체를 구분<br>
-    </div>
-        -->
+                                ✓ 2.5D 소팅 오더 규칙 정립<br>
+                                <div class="projectDesc-detail">
+                                    - 3D 공간에 스파인을 세워서 구현한 2.5D 방식의 게임이었기에, URP의 Custom Sorting Order를 사용해 소팅 오더를 조정하고 Sprite SortGroup으로 바닥과 피사체를 구분<br>
+                                </div>
+                                    -->
                             </div>
-                            </div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
@@ -581,10 +579,7 @@
                                     <summary>더 보기 : 인트로 시네마틱 연출 구현 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/bosco_opening.mp4">
-                                            <video muted autoplay loop width="600">
-                                                <source src="./movie/bosco_opening.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="600" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -600,10 +595,7 @@
                                     <summary>더 보기 : 캐릭터 가챠 연출 구현 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/bosco_summon.mp4">
-                                            <video muted autoplay loop width="600">
-                                                <source src="./movie/bosco_summon.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="600" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -622,16 +614,13 @@
                                     <div class="InBox">
 
                                         ✓ 어드레서블 리소스 로딩 최적화 (전 / 후)<br>
-                                                                  <div class="projectDesc-detail">
-                                                                      - 기존 코드는 모든 비동기 Task 로직이 직렬로 순차 처리되어 안정적이긴 했으나, 로딩 시간이 길었습니다. 따라서 순서에 종속적이지 않은 Task들은 병렬로 동시 로딩하도록 변경하고, UniTask.WhenAll을 사용해 대기하도록 개선했습니다.
-                                                                  </div>
+                                        <div class="projectDesc-detail">
+                                            - 기존 코드는 모든 비동기 Task 로직이 직렬로 순차 처리되어 안정적이긴 했으나, 로딩 시간이 길었습니다. 따라서 순서에 종속적이지 않은 Task들은 병렬로 동시 로딩하도록 변경하고, UniTask.WhenAll을 사용해 대기하도록 개선했습니다.
+                                        </div>
                                         <br>
 
                                         <div class="video-link" vidUrl="./movie/bosco_loading.mp4">
-                                            <video muted autoplay loop width="660">
-                                                <source src="./movie/bosco_loading.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="660" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -665,7 +654,9 @@
                                 <details class="DescDetails">
                                     <summary>더 보기 : 툴바 시트 업데이트</summary>
                                     <div class="InBox">
-                                        <a href="./img/project/bosco_tableUpdate.gif" data-title="bosco_tableUpdate" data-lightbox="bosco_tableUpdate"><img src="./img/project/bosco_tableUpdate.gif" alt="" width: 300px></a>
+                                        <a href="./img/project/bosco_tableUpdate.gif" data-title="bosco_tableUpdate" data-lightbox="bosco_tableUpdate">
+                                            <img data-src="./img/project/bosco_tableUpdate.gif" alt="" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
 
@@ -679,7 +670,9 @@
                                 <details class="DescDetails">
                                     <summary>더 보기 : 전투 디버깅 뷰어 스크린샷</summary>
                                     <div class="InBox">
-                                        <a href="./img/project/bosco_battleInfo.webp" data-title="bosco_battleInfo" data-lightbox="bosco_battleInfo"><img src="./img/project/bosco_battleInfo.webp" alt="" width: 300px></a>
+                                        <a href="./img/project/bosco_battleInfo.webp" data-title="bosco_battleInfo" data-lightbox="bosco_battleInfo">
+                                            <img data-src="./img/project/bosco_battleInfo.webp" alt="" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
 
@@ -744,16 +737,20 @@
                                     <div class="InBox">
                                         <b>연출 시퀀스 문서 / 작성된 연출시트 예시</b><br>
 
-                                        <a href="./img/project/sequenceList.PNG" data-title="연출 시퀀스 문서" data-lightbox="sequence"><img src="./img/project/sequenceList.PNG" style="width: 49%;" alt=""></a>
-                                        <a href="./img/project/dialogSequence.PNG" data-title="작성된 연출시트 예시" data-lightbox="sequence"><img src="./img/project/dialogSequence.PNG" style="width: 49%;" alt=""></a><br>
+                                        <a href="./img/project/sequenceList.PNG" data-title="연출 시퀀스 문서" data-lightbox="sequence">
+                                            <img data-src="./img/project/sequenceList.PNG" style="width: 49%;" alt="" class="lazy-image">
+                                        </a>
+
+                                        <a href="./img/project/dialogSequence.PNG" data-title="작성된 연출시트 예시" data-lightbox="sequence">
+                                            <img data-src="./img/project/dialogSequence.PNG" style="width: 49%;" alt="" class="lazy-image">
+                                        </a><br>
                                         <div class="video-link" vidUrl="./movie/talk_system.mp4">
-                                            <video muted autoplay loop width="200">
-                                                <source src="./movie/talk_system.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="200" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
-                                        <a href="./img/project/dialog_UML.png" data-title="대화 연출 시스템 UML" data-lightbox="sequence"><img src="./img/project/dialog_UML.png" style="width: 700px;" alt=""></a><br>
+                                        <a href="./img/project/dialog_UML.png" data-title="대화 연출 시스템 UML" data-lightbox="sequence">
+                                            <img data-src="./img/project/dialog_UML.png" style="width: 700px;" alt="" class="lazy-image">
+                                        </a><br>
                                     </div>
                                 </details>
                                 <div class="samplelink">
@@ -780,13 +777,12 @@
                                     <div class="InBox">
 
                                         <div class="video-link" vidUrl="./movie/lessa_cut2.mp4">
-                                            <video muted autoplay loop width="300">
-                                                <source src="./movie/lessa_cut2.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="300" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
-                                        <a href="./img/project/shader_node.webp" data-title="쉐이더 노드" data-lightbox="쉐이더 노드"><img src="./img/project/shader_node.webp" style="width: 380px;" alt=""></a><br>
+                                        <a href="./img/project/shader_node.webp" data-title="쉐이더 노드" data-lightbox="쉐이더 노드">
+                                            <img data-src="./img/project/shader_node.webp" style="width: 380px;" alt="" class="lazy-image">
+                                        </a><br>
                                     </div>
                                 </details>
                             </div>
@@ -862,19 +858,16 @@
 
                                         <br>
 
-                                        <a href="./img/project/seek_cardSequence.png" data-title="twin_skill_stat" data-lightbox="seek_cardSequence"><img src="./img/project/seek_cardSequence.png" alt="" max-width: 700px></a>
+                                        <a href="./img/project/seek_cardSequence.png" data-title="twin_skill_stat" data-lightbox="seek_cardSequence">
+                                            <img data-src="./img/project/seek_cardSequence.png" alt="" class="lazy-image">
+                                        </a>
+
                                         <div class="video-link" vidUrl="./movie/seek_battle_1.mp4">
-                                            <video muted autoplay loop width="200">
-                                                <source src="./movie/seek_battle_1.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="200" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                         <div class="video-link" vidUrl="./movie/seek_battle_2.mp4">
-                                            <video muted autoplay loop width="200">
-                                                <source src="./movie/seek_battle_2.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="200" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -893,17 +886,11 @@
                                     <div class="InBox">
 
                                         <div class="video-link" vidUrl="./movie/seek_lobby_1.mp4">
-                                            <video muted autoplay loop width="200">
-                                                <source src="./movie/seek_lobby_1.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="200" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                         <div class="video-link" vidUrl="./movie/seek_lobby_2.mp4">
-                                            <video muted autoplay loop width="200">
-                                                <source src="./movie/seek_lobby_2.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="200" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -978,10 +965,7 @@
                                     <summary>더 보기 : 연계 전투 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/twin_chain.mp4">
-                                            <video muted autoplay loop width="260">
-                                                <source src="./movie/twin_chain.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="260" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -995,13 +979,12 @@
                                     <summary>더 보기 : 특성 스킬 예시</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/twin_p.mp4">
-                                            <video muted autoplay loop width="660">
-                                                <source src="./movie/twin_p.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="660" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
-                                        <a href="./img/project/twin_skill_stat.png" data-title="twin_skill_stat" data-lightbox="twin_skill_stat"><img src="./img/project/twin_skill_stat.png" alt="" max-width: 700px></a>
+                                        <a href="./img/project/twin_skill_stat.png" data-title="twin_skill_stat" data-lightbox="twin_skill_stat">
+                                            <img data-src="./img/project/twin_skill_stat.png" alt="" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
                                 <br>
@@ -1013,10 +996,7 @@
                                     <summary>더 보기 : 던전 크롤링과 덱 빌딩</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/twin_ui_3.mp4">
-                                            <video muted autoplay loop height="400">
-                                                <source src="./movie/twin_ui_3.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop height="400" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                         <div class="video-link" vidUrl="./movie/twin_ui_1.mp4">
@@ -1027,15 +1007,16 @@
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                         <div class="video-link" vidUrl="./movie/twin_ui_2.mp4">
-                                            <video muted autoplay loop height="400">
-                                                <source src="./movie/twin_ui_2.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop height="400" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
 
-                                        <a href="./img/project/backTrackingMaze.gif" data-title="빽 트레킹 미로생성" data-lightbox="twin_maze"><img src="./img/project/backTrackingMaze.gif" alt="" style="height: 300px;"></a>
-                                        <a href="./img/project/ellersMaze.gif" data-title="Eller 알고리즘 미로생성" data-lightbox="twin_maze"><img src="./img/project/ellersMaze.gif" alt="" style="height: 300px;"></a>
+                                        <a href="./img/project/backTrackingMaze.gif" data-title="빽 트레킹 미로생성" data-lightbox="twin_maze">
+                                            <img data-src="./img/project/backTrackingMaze.gif" alt="" style="height: 300px;" class="lazy-image">
+                                        </a>
+                                        <a href="./img/project/ellersMaze.gif" data-title="Eller 알고리즘 미로생성" data-lightbox="twin_maze">
+                                            <img data-src="./img/project/ellersMaze.gif" alt="" style="height: 300px;" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
                                 <div class="samplelink">
@@ -1050,8 +1031,12 @@
                                 <details class="DescDetails">
                                     <summary>더 보기 : 유물</summary>
                                     <div class="InBox">
-                                        <a href="./img/project/twin_legacy_1.webp" data-title="twin_legacy" data-lightbox="twin_legacy"><img src="./img/project/twin_legacy_1.webp" alt="" width: 300px></a>
-                                        <a href="./img/project/twin_legacy_2.webp" data-title="twin_legacy" data-lightbox="twin_legacy"><img src="./img/project/twin_legacy_2.webp" alt="" width: 300px></a>
+                                        <a href="./img/project/twin_legacy_1.webp" data-title="twin_legacy" data-lightbox="twin_legacy">
+                                            <img data-src="./img/project/twin_legacy_1.webp" alt="" class="lazy-image">
+                                        </a>
+                                        <a href="./img/project/twin_legacy_2.webp" data-title="twin_legacy" data-lightbox="twin_legacy">
+                                            <img data-src="./img/project/twin_legacy_2.webp" alt="" class="lazy-image">
+                                        </a>
                                     </div>
                                 </details>
 
@@ -1064,10 +1049,7 @@
                                     <summary>더 보기 : 장비</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/twin_equip.mp4">
-                                            <video muted autoplay loop width="260">
-                                                <source src="./movie/twin_equip.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="260" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -1081,10 +1063,7 @@
                                     <summary>더 보기 : 상점</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/twin_shop.mp4">
-                                            <video muted autoplay loop width="260">
-                                                <source src="./movie/twin_shop.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="260" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -1109,10 +1088,7 @@
                                     <summary>더 보기 : 패치 시스템 구현 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="./movie/twin_patch.mp4">
-                                            <video muted autoplay loop width="260">
-                                                <source src="./movie/twin_patch.mp4" type="video/mp4">
-                                                <strong>Your browser does not support the video tag.</strong>
-                                            </video>
+                                            <video muted autoplay loop width="260" class="lazy-video"></video>
                                             <i class='bx bx-play-circle'></i>
                                         </div>
                                     </div>
@@ -1133,7 +1109,10 @@
                                     <summary>더 보기 : (에디터 기준) 전투 중 batches 디버깅창</summary>
 
                                     <div class="InBox">
-                                        <a href="./img/project/twinArcana_batch.png" data-title="twinArcana_batch" data-lightbox="twinArcana_batch"><img src="./img/project/twinArcana_batch.png" alt=""></a><br>
+                                        <a href="./img/project/twinArcana_batch.png" data-title="twinArcana_batch" data-lightbox="twinArcana_batch">
+                                            <img data-src="./img/project/twinArcana_batch.png" alt="" class="lazy-image">
+                                        </a>
+                                        <br>
                                     </div>
                                 </details>
                             </div>
@@ -1194,9 +1173,7 @@
                             </div>
                         </details>
 
-
                         <br>
-
 
                         <div class="codeStyleSectiontitle">
                             <span></span>
@@ -1243,13 +1220,21 @@
                                 ✔ 마코빌의 팀 슬랙 채널에<br>
                                 '배틀리그' 개발 7개월의 기간 동안 <b>153개</b>의 개발 영상을 공유하였습니다.<br>
                                 '프로젝트B' 개발 12개월의 기간 동안 <b>247개</b>의 개발 영상을 공유하였습니다.<br>
-                                <a href="./img/project/Idle_share_247.png" data-title="Idle_share_247" data-lightbox="Idle_share_247"><img src="./img/project/Idle_share_247.png" alt=""></a>
+
+                                <a href="./img/project/Idle_share_247.png" data-title="Idle_share_247" data-lightbox="Idle_share_247">
+                                    <img data-src="./img/project/Idle_share_247.png" alt="" class="lazy-image">
+                                </a>
+
                                 <br>
                                 ✔ 자라나는 씨앗 팀 슬랙 채널에<br>
                                 '하이드 앤 씨크' 개발 10개월의 기간 동안 <b>72개</b>의 개발 영상을 공유하였습니다.<br>
 
-                                <a href="./img/project/seek_share2.webp" data-title="seek_share2" data-lightbox="seek_share2"><img src="./img/project/seek_share2.webp" alt=""></a>
-                                <a href="./img/project/seek_share.webp" data-title="seek_share" data-lightbox="seek_share"><img src="./img/project/seek_share.webp" alt=""></a>
+                                <a href="./img/project/seek_share2.webp" data-title="seek_share2" data-lightbox="seek_share2">
+                                    <img data-src="./img/project/seek_share2.webp" alt="" class="lazy-image">
+                                </a>
+                                <a href="./img/project/seek_share.webp" data-title="seek_share" data-lightbox="seek_share">
+                                    <img data-src="./img/project/seek_share.webp" alt="" class="lazy-image">
+                                </a>
                             </div>
                         </details>
                         <br>
@@ -1292,18 +1277,12 @@
                                 <br>
 
                                 <div class="video-link" vidUrl="./movie/projectB_battleDebug.mp4">
-                                    <video muted autoplay loop width="375">
-                                        <source src="./movie/projectB_battleDebug.mp4" type="video/mp4">
-                                        <strong>Your browser does not support the video tag.</strong>
-                                    </video>
+                                    <video muted autoplay loop width="375" class="lazy-video"></video>
                                     <i class='bx bx-play-circle'></i>
                                 </div>
 
                                 <div class="video-link" vidUrl="./movie/projectB_statDebug.mp4">
-                                    <video muted autoplay loop width="375">
-                                        <source src="./movie/projectB_statDebug.mp4" type="video/mp4">
-                                        <strong>Your browser does not support the video tag.</strong>
-                                    </video>
+                                    <video muted autoplay loop width="375" class="lazy-video"></video>
                                     <i class='bx bx-play-circle'></i>
                                 </div>
                             </div>
@@ -1320,26 +1299,17 @@
                                 <br>
 
                                 <div class="video-link" vidUrl="./movie/toolNew_2.mp4">
-                                    <video muted autoplay loop width="290">
-                                        <source src="./movie/toolNew_2.mp4" type="video/mp4">
-                                        <strong>Your browser does not support the video tag.</strong>
-                                    </video>
+                                    <video muted autoplay loop width="290" class="lazy-video"></video>
                                     <i class='bx bx-play-circle'></i>
                                 </div>
 
                                 <div class="video-link" vidUrl="./movie/toolNew_3.mp4">
-                                    <video muted autoplay loop height="195">
-                                        <source src="./movie/toolNew_3.mp4" type="video/mp4">
-                                        <strong>Your browser does not support the video tag.</strong>
-                                    </video>
+                                    <video muted autoplay loop height="195" class="lazy-video"></video>
                                     <i class='bx bx-play-circle'></i>
                                 </div>
 
                                 <div class="video-link" vidUrl="./movie/tool_1.mp4">
-                                    <video muted autoplay loop height="195">
-                                        <source src="./movie/tool_1.mp4" type="video/mp4">
-                                        <strong>Your browser does not support the video tag.</strong>
-                                    </video>
+                                    <video muted autoplay loop height="195" class="lazy-video"></video>
                                     <i class='bx bx-play-circle'></i>
                                 </div>
                             </div>
@@ -1391,6 +1361,58 @@
 
     </div>
 
+
+    <!--이미지 지연로딩-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyImages = document.querySelectorAll(".lazy-image");
+
+            const lazyLoadImage = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src; // data-src에 있는 경로로 src 설정
+                        img.classList.remove("lazy-image");
+                        observer.unobserve(img);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(lazyLoadImage, { threshold: 0.1 });
+            lazyImages.forEach(img => observer.observe(img));
+        });
+
+    </script>
+
+    <!--동영상 지연로딩-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyVideos = document.querySelectorAll(".lazy-video");
+
+            const lazyLoadVideo = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const videoDiv = entry.target;
+                        const videoElement = videoDiv.querySelector("video");
+                        const videoUrl = videoDiv.getAttribute("vidUrl");
+
+                        if (videoUrl) {
+                            videoElement.src = videoUrl;
+                            videoElement.load();  // 강제로 비디오를 로드하여 재생
+                        }
+
+                        videoDiv.classList.remove("lazy-video");
+                        observer.unobserve(videoDiv);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(lazyLoadVideo, { threshold: 0.25 });
+            lazyVideos.forEach(video => observer.observe(video.closest(".video-link")));
+        });
+    </script>
+
+    <!--라이트박스-->
     <script>
         // 이미지 라이트박스
         lightbox.option({
@@ -1422,8 +1444,8 @@
     <script>PDFObject.embed("./pdf/2021_3Q.pdf", "#pdfView1");</script>
     <script>PDFObject.embed("./pdf/2022_3Q.pdf", "#pdfView2");</script>
 
+    <!--아코디언-->
     <script>
-        // 아코디언
         const $_details = $(".DescDetails");
         const $_summary = $_details.find("summary");
 
