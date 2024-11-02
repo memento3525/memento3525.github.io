@@ -89,7 +89,7 @@ img a::after {
 /* 배경 이미지 */
 
 .my-background {
-    background-image: url("../img/background.png"); /*배경 이미지 파일 */
+    background-image: url("https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/background.png"); /*배경 이미지 파일 */
     background-repeat: repeat;
     /*background: linear-gradient(0deg,#FFFFFF,#ededed);*/ /* 상단 그라디언트 라인 색 */
     opacity: 10%; /* 배경 투명도 */
