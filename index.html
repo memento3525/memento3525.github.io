@@ -401,11 +401,11 @@
                                         <br><br>
                                         테스트 중 공격 범위를 실시간을 수정하는 예시
                                         <br><br>
-                                            <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/projectB_scriptable.mp4">
-                                                <video muted autoplay loop preload="none" width="600" class="lazy-video"></video>
-                                                <div class="loading-spinner" aria-hidden="true"></div> <!-- 로딩 스피너 -->
-                                                <i class='bx bx-play-circle'></i>
-                                            </div>
+                                        <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/projectB_scriptable.mp4">
+                                            <video muted autoplay loop preload="none" width="600" class="lazy-video"></video>
+                                            <div class="loading-spinner" aria-hidden="true"></div> <!-- 로딩 스피너 -->
+                                            <i class='bx bx-play-circle'></i>
+                                        </div>
 
                                     </div>
                                 </details>
@@ -750,11 +750,11 @@
                                         <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/dialogSequence.PNG" data-title="작성된 연출시트 예시" data-lightbox="sequence">
                                             <img data-src="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/dialogSequence.PNG" style="width: 49%;" alt="" class="lazy-image">
                                         </a><br>
-                                            <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/talk_system.mp4">
-                                                <video muted autoplay loop preload="none" width="200" class="lazy-video"></video>
-                                                <div class="loading-spinner" aria-hidden="true"></div> <!-- 로딩 스피너 -->
-                                                <i class='bx bx-play-circle'></i>
-                                            </div>
+                                        <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/talk_system.mp4">
+                                            <video muted autoplay loop preload="none" width="200" class="lazy-video"></video>
+                                            <div class="loading-spinner" aria-hidden="true"></div> <!-- 로딩 스피너 -->
+                                            <i class='bx bx-play-circle'></i>
+                                        </div>
                                         <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/dialog_UML.png" data-title="대화 연출 시스템 UML" data-lightbox="sequence">
                                             <img data-src="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/dialog_UML.png" style="width: 700px;" alt="" class="lazy-image">
                                         </a><br>
@@ -1377,7 +1377,7 @@
     </div>
 
 
-    <!--이미지 지연로딩-->
+    <!-- 이미지 지연로딩 -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const lazyImages = document.querySelectorAll(".lazy-image");
@@ -1393,13 +1393,24 @@
                 });
             };
 
-            const observer = new IntersectionObserver(lazyLoadImage, { threshold: 0.1 });
-            lazyImages.forEach(img => observer.observe(img));
-        });
+            const preloadImage = (img) => {
+                const src = img.dataset.src; // data-src에서 경로 가져오기
+                if (src) {
+                    const preloadedImg = new Image(); // 새로운 이미지 객체 생성
+                    preloadedImg.src = src; // 이미지를 미리 로드
+                }
+            };
 
+            const observer = new IntersectionObserver(lazyLoadImage, { threshold: 0.1 });
+            lazyImages.forEach(img => {
+                observer.observe(img);
+                // 페이지가 로드된 후에도 이미지를 계속 로드
+                requestIdleCallback(() => preloadImage(img));
+            });
+        });
     </script>
 
-    <!--동영상 지연로딩-->
+    <!-- 동영상 지연로딩 -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const lazyVideos = document.querySelectorAll(".lazy-video");
@@ -1429,8 +1440,22 @@
                 });
             };
 
+            const preloadVideo = (videoDiv) => {
+                const videoElement = videoDiv.querySelector("video");
+                const videoUrl = videoDiv.getAttribute("vidUrl");
+
+                if (videoUrl) {
+                    videoElement.src = videoUrl; // 비디오 URL 설정
+                    videoElement.load(); // 비디오 로드
+                }
+            };
+
             const observer = new IntersectionObserver(lazyLoadVideo, { threshold: 0.25 });
-            lazyVideos.forEach(video => observer.observe(video.closest(".video-link")));
+            lazyVideos.forEach(video => {
+                observer.observe(video.closest(".video-link"));
+                // 페이지가 로드된 후에도 비디오를 계속 로드
+                requestIdleCallback(() => preloadVideo(video.closest(".video-link")));
+            });
         });
     </script>
 
