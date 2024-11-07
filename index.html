@@ -330,6 +330,37 @@
                             <div class="inlineTitle"># 세부 작업 내역</div>
                             <div class="projectInline">
 
+                                <p>인게임 전투 로직 전체 구현</p>
+                                ✓ 비헤비어 트리를 사용한 AI 로직 설계<br>
+                                <div class="projectDesc-detail">
+                                    - BT GUI 에셋 중 가장 널리 사용되는 Behavior Designer를 사용하여 구현하였음
+                                </div>
+                                <div class="projectDesc-detail">
+                                    - 적은 연산을 위해 유닛 개별BT 이외의 그룹 단위로 별도 BT를 생성하여 타겟 서칭 등 그룹 단위로 처리가능한 로직들은 그룹BT가 처리하도록 이관
+                                </div>
+                                <details class="DescDetails">
+                                    <summary>더 보기 : 그룹 BT, 캐릭터의 스킬 BT</summary>
+                                    <div class="InBox">
+                                        ✔ 유닛 그룹 BT 뷰어 (상)<br>
+                                        ✔ 유닛의 개별 스킬 1개의 BT (하)<br>
+                                        <br>
+                                        <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_group.png" data-title="projectB_group" data-lightbox="projectB_group">
+                                            <div class="loading-spinner" style="display:none;"></div>
+                                            <img data-src="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_group.png" style="height: 360px;" class="lazy-image">
+                                        </a>
+                                        <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_skill.png" data-title="projectB_group" data-lightbox="projectB_group">
+                                            <div class="loading-spinner" style="display:none;"></div>
+                                            <img data-src="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_skill.png" style="height: 360px;" class="lazy-image">
+                                        </a>
+                                    </div>
+                                </details>
+
+                                <div class="samplelink">
+                                    <a href="https://github.com/memento3525/MySampleCode/tree/main/v3_241031/PassiveSkillTrigger" rel="noopener" target="_blank">샘플 코드 : 패시브 트리거 시스템</a><br>
+                                </div>
+
+                                <br>
+
                                 <p>방치형 군단 전투 시스템 구현</p>
                                 ✓ 각 영웅이 8명의 용병을 동반해 아군 유닛이 총 64명으로 구성된 대규모 전투<br>
                                 ✓ 전투 구역의 동적 분리<br>
@@ -365,37 +396,6 @@
 
                                 <div class="samplelink">
                                     <a href="https://github.com/memento3525/MySampleCode/blob/main/v3_241031/BattleSection/BattleSection.cs" rel="noopener" target="_blank">샘플 코드 : 배틀 섹션</a><br>
-                                </div>
-
-                                <br>
-
-                                <p>인게임 전투 로직 전체 구현</p>
-                                ✓ 비헤비어 트리를 사용한 AI 로직 설계<br>
-                                <div class="projectDesc-detail">
-                                    - BT GUI 에셋 중 가장 널리 사용되는 Behavior Designer를 사용하여 구현하였음
-                                </div>
-                                <div class="projectDesc-detail">
-                                    - 적은 연산을 위해 유닛 개별BT 이외의 그룹 단위로 별도 BT를 생성하여 타겟 서칭 등 그룹 단위로 처리가능한 로직들은 그룹BT가 처리하도록 이관
-                                </div>
-                                <details class="DescDetails">
-                                    <summary>더 보기 : 그룹 BT, 캐릭터의 스킬 BT</summary>
-                                    <div class="InBox">
-                                        ✔ 유닛 그룹 BT 뷰어 (상)<br>
-                                        ✔ 유닛의 개별 스킬 1개의 BT (하)<br>
-                                        <br>
-                                        <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_group.png" data-title="projectB_group" data-lightbox="projectB_group">
-                                            <div class="loading-spinner" style="display:none;"></div>
-                                            <img data-src="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_group.png" style="height: 360px;" class="lazy-image">
-                                        </a>
-                                        <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_skill.png" data-title="projectB_group" data-lightbox="projectB_group">
-                                            <div class="loading-spinner" style="display:none;"></div>
-                                            <img data-src="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_skill.png" style="height: 360px;" class="lazy-image">
-                                        </a>
-                                    </div>
-                                </details>
-
-                                <div class="samplelink">
-                                    <a href="https://github.com/memento3525/MySampleCode/tree/main/v3_241031/PassiveSkillTrigger" rel="noopener" target="_blank">샘플 코드 : 패시브 트리거 시스템</a><br>
                                 </div>
 
                                 <br>
@@ -502,6 +502,43 @@
                                         </div>
                                     </div>
                                 </details>
+
+                                <br>
+                                <p>UI 튜토리얼 구현</p>
+
+                                ✓ 언마스크 기반 순서대로 버튼을 클릭하는 튜토리얼<br>
+                                <div class="projectDesc-detail">
+                                    - 언마스킹된 특정 버튼을 순서대로 눌러야 되는 튜토리얼을 클라 대응없이 기획자가 추가할 수 있도록 구현
+                                </div>
+
+                                <details class="DescDetails">
+                                    <summary>더 보기 : UI 튜토리얼 영상</summary>
+                                    <div class="InBox">
+
+                                        <b>✔ 구독-발행패턴을 통한 느슨한 참조</b><br>
+                                        UniRX의 MessageBroker 를 사용하여 튜토리얼의 타겟이 되는 UI에서 UITutorial와 관련된 코드를 직접 참조하지 않도록 합니다.<br>
+                                        <b>✔ 클라 도움없이 기획자가 튜토리얼을 구성</b><br>
+                                        UI를 순서대로 누르는 튜토리얼은 클라 대응없이 기획자가 추가할 수 있도록 구현하였습니다.
+
+                                        <br>
+
+                                        <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_TutorialComponent.png" data-title="projectB_TutorialComponent" data-lightbox="projectB_TutorialComponent">
+                                            <div class="loading-spinner" style="display:none;"></div>
+                                            <img data-src="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/projectB_TutorialComponent.png" class="lazy-image">
+                                        </a>
+
+                                        <br>
+
+                                        <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/projectB_Tutorial.mp4">
+                                            <video muted autoplay loop preload="none" width="340" class="lazy-video"></video>
+                                            <div class="loading-spinner" aria-hidden="true"></div> <!-- 로딩 스피너 -->
+                                            <i class='bx bx-play-circle'></i>
+                                        </div>
+                                    </div>
+                                </details>
+                                <div class="samplelink">
+                                    <a href="https://github.com/memento3525/MySampleCode/tree/main/v3_241031/UITutorial" rel="noopener" target="_blank">샘플 코드 : UI튜토리얼</a><br>
+                                </div>
 
                                 <!--
                                 <br>
@@ -781,7 +818,7 @@
                                     </div>
                                 </details>
                                 <div class="samplelink">
-                                    <a href=".com/memento3525/MySampleCod" rel="noopener" target="_blank">샘플 코드 : 대화 시스템</a><br>
+                                    <a href="https://github.com/memento3525/MySampleCode/tree/main/v2_230215/DialogSystem" rel="noopener" target="_blank">샘플 코드 : 대화 시스템</a><br>
                                 </div>
                                 <br>
 
