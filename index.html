@@ -295,7 +295,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="tg-0lax">참여 기간</td>
-                                        <td class="tg-0lax">23.11 ~ 24.11 (약 12개월) / 프로덕션 단계에서 프로젝트 중단</td>
+                                        <td class="tg-0lax">23.11 ~ 24.11 (약 12개월) / 프로덕션 단계에서 프로젝트 중단 및 퇴사</td>
                                     </tr>
                                     <tr>
                                         <td class="tg-0lax">개발 인원</td>
@@ -446,6 +446,12 @@
 
                                 <p>스크립터블 파싱 자동화</p>
                                 ✓ 엑셀 데이터 한 행당 하나의 스크립터블을 생성하며, 데이터를 파싱할 때 엑셀에 키값이 일치하지 않는 스크립터블이 삭제되고, 존재하지 않는 스크립터블은 자동 생성되도록 구현<br>
+                                ✓ 파싱 시 객체들의 IEquatable을 구현하거나 record타입으로 선언하여 테이블 값이 변한 경우에만 파싱하도록 처리 (<a href="https://mentum.tistory.com/787" rel="noopener" target="_blank">
+                                    블로그 작성글
+                                </a>)<br>
+                                <div class="projectDesc-detail">
+                                    - 실제값은 그대로인데 암호화된 값만 변해 git에 업로드 되는 현상 방지
+                                </div>
                                 ✓ 기획자의 <b>휴먼 에러를 사전에 검증</b>하고 오류메시지를 출력하도록 처리<br>
                                 <details class="DescDetails">
                                     <summary>더 보기 : 테이블 자동화 로그</summary>
@@ -464,13 +470,6 @@
                                     </div>
                                 </details>
 
-                                <br>
-                                ✓ 파싱 시 객체들의 IEquatable을 구현하거나 record타입으로 선언하여 테이블 값이 변한 경우에만 파싱하도록 처리 (<a href="https://mentum.tistory.com/787" rel="noopener" target="_blank">
-                                    블로그 작성글
-                                </a>)<br>
-                                <div class="projectDesc-detail">
-                                    - 실제값은 그대로인데 암호화된 값만 변해 git에 업로드 되는 현상 방지
-                                </div>
                                 <br>
 
                                 <p>전투 디버깅 뷰어 제작</p>
@@ -508,7 +507,7 @@
 
                                 ✓ 언마스크 기반 순서대로 버튼을 클릭하는 튜토리얼<br>
                                 <div class="projectDesc-detail">
-                                    - 언마스킹된 특정 버튼을 순서대로 눌러야 되는 튜토리얼을 클라 대응없이 기획자가 추가할 수 있도록 구현
+                                    - 언마스킹된 특정 버튼을 순서대로 눌러야 하는 튜토리얼을, 클라이언트 수정 없이 기획자가 직접 추가할 수 있도록 구현
                                 </div>
 
                                 <details class="DescDetails">
@@ -516,7 +515,7 @@
                                     <div class="InBox">
 
                                         <b>✔ 구독-발행패턴을 통한 느슨한 참조</b><br>
-                                        UniRX의 MessageBroker 를 사용하여 튜토리얼의 타겟이 되는 UI에서 UITutorial와 관련된 코드를 직접 참조하지 않도록 합니다.<br>
+                                        UniRX의 MessageBroker 를 사용하여 튜토리얼의 타겟이 되는 UI에서 UITutorial와 관련 코드를 직접 참조하지 않도록 구현했습니다.<br>
                                         <b>✔ 클라 도움없이 기획자가 튜토리얼을 구성</b><br>
                                         UI를 순서대로 누르는 튜토리얼은 클라 대응없이 기획자가 추가할 수 있도록 구현하였습니다.
 
@@ -540,21 +539,65 @@
                                     <a href="https://github.com/memento3525/MySampleCode/tree/main/v3_241031/UITutorial" rel="noopener" target="_blank">샘플 코드 : UI튜토리얼</a><br>
                                 </div>
 
-                                <!--
-                                <br>
-                                <br>
-                                <p>이펙터 기술 지원</p>
-                                ✓ 2D 이펙트 좌우 플립 기능 구현<br>
-                                <div class="projectDesc-detail">
-                                    - 이펙트가 풀링되면서 생성될 때, 파티클의 각 속성을 시전자의 방향에 따라 플립하여 생성하며,
-                                    채널링 스킬의 경우 시전 캐릭터의 방향 콜백에 따라 다시 플립되도록 구현
-                                </div>
 
-                                ✓ 2.5D 소팅 오더 규칙 정립<br>
-                                <div class="projectDesc-detail">
-                                    - 3D 공간에 스파인을 세워서 구현한 2.5D 방식의 게임이었기에, URP의 Custom Sorting Order를 사용해 소팅 오더를 조정하고 Sprite SortGroup으로 바닥과 피사체를 구분<br>
-                                </div>
-                                    -->
+                                <br>
+
+                                <p>어드레서블 종속성 관리 및 에셋그룹 설계</p>
+                                ✓ 어드레서블 그룹의 설계를 담당<br>
+                                <details class="DescDetails">
+                                    <summary>더 보기 : 어드레서블 에셋그룹 규칙</summary>
+                                    <div class="InBox">
+                                        ✓ Default Local Group 사용 금지<br>
+                                        <div class="projectDesc-detail">
+                                            - 어떠한 경우에도 Default 그룹에는 에셋을 남겨두는 것을 금지<br>
+                                        </div>
+                                        ✓ 에피소드 전투 배경 (스테이지형 전투)<br>
+                                        <div class="projectDesc-detail">
+                                            - 스테이지형 전투 배경은 프리팹으로 관리되며, 동적으로 로드 및 언로드가 이루어지기 때문에 테마별 에셋 그룹을 생성 <br>
+                                            - 나무와 같은 중복 리소스는 별도의 에셋 그룹으로 분리하여 종속성을 관리
+                                        </div>
+                                        ✓ 던전 전투 배경<br>
+                                        <div class="projectDesc-detail">
+                                            - 각 던전 씬은 다른 맵과 중복되지 않으므로, 던전별 1개의 에셋 그룹으로 관리
+                                        </div>
+                                        ✓ 캐릭터 일러스트<br>
+                                        <div class="projectDesc-detail">
+                                            - 썸네일은 아틀라스화를 위해 하나의 그룹으로 관리하고, 풀 일러스트는 개별 번들로 분리
+                                        </div>
+                                        ✓ 캐릭터 이펙트<br>
+                                        <div class="projectDesc-detail">
+                                            - 자주 사용되며 업데이트 가능성이 낮은 공용 이펙트는 별도의 그룹으로 분리<br>
+                                            - 캐릭터 별 이펙트는 공유되는 텍스처가 많아 통합 관리하고, 씬 변경 시 언로드를 목표로 설정
+                                        </div>
+                                        ✓ 스크립터블 오브젝트<br>
+                                        <div class="projectDesc-detail">
+                                            - 용량이 작고 자주 변경되지 않는 스크립터블은 하나의 그룹으로 관리<br>
+                                            - 스테이지 밸런스 테이블과 같이 자주 변경되며 용량이 큰 스크립터블은 개별 그룹으로 관리
+                                        </div>
+                                        ✓ 기타<br>
+                                        <div class="projectDesc-detail">
+                                            - 용량이 크면서도 변경이 적은 폰트, 튜토리얼, 인트로 만화, UI 사운드 등은 타입별 그룹으로 통합 관리<br>
+                                            - 텍스처 아틀라스는 각각 별도의 그룹으로 관리하며, 하위 스프라이트가 어드레서블에 포함될 경우 같은 그룹으로 관리
+                                        </div>
+                                    </div>
+                                </details>
+
+
+                                <!--
+    <br>
+    <br>
+    <p>이펙터 기술 지원</p>
+    ✓ 2D 이펙트 좌우 플립 기능 구현<br>
+    <div class="projectDesc-detail">
+        - 이펙트가 풀링되면서 생성될 때, 파티클의 각 속성을 시전자의 방향에 따라 플립하여 생성하며,
+        채널링 스킬의 경우 시전 캐릭터의 방향 콜백에 따라 다시 플립되도록 구현
+    </div>
+
+    ✓ 2.5D 소팅 오더 규칙 정립<br>
+    <div class="projectDesc-detail">
+        - 3D 공간에 스파인을 세워서 구현한 2.5D 방식의 게임이었기에, URP의 Custom Sorting Order를 사용해 소팅 오더를 조정하고 Sprite SortGroup으로 바닥과 피사체를 구분<br>
+    </div>
+        -->
                             </div>
                         </div>
                     </div>
@@ -660,7 +703,7 @@
 
                                 <br>
 
-                                <p>레거시 코드 및 리소스 포멧 최적화</p>
+                                <p>레거시 코드 및 리소스 최적화</p>
                                 ✓ 전투 진입 로딩 시간 최적화<br>
                                 <div class="projectDesc-detail">
                                     - 전투 시작 시 직렬 처리되던 리소스 로딩을 병렬 처리로 전환하여 로딩 시간을 기존 12초에서 4초로 단축
@@ -1048,7 +1091,7 @@
                                 <span class="projectDesc-detail">- 각 스킬 객체가 스탯을 가지도록 구현하여 특성에 따라 스킬의 변화를 관리하기 쉽도록 구현</span><br>
 
                                 <details class="DescDetails">
-                                    <summary>더 보기 : 특성 스킬 예시</summary>
+                                    <summary>더 보기 : 특성 스킬 예시 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/twin_p.mp4">
                                             <video muted autoplay loop preload="none" width="660" class="lazy-video"></video>
@@ -1067,7 +1110,7 @@
                                 ✓ 절차적으로 자동 생성된 던전 및 자율 이동 탐험 시스템 구현<br>
                                 ✓ 랜덤 카드 선택으로 덱 구축, 덱 구성 시스템 구현<br />
                                 <details class="DescDetails">
-                                    <summary>더 보기 : 던전 크롤링과 덱 빌딩</summary>
+                                    <summary>더 보기 : 던전 크롤링과 덱 빌딩 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/twin_ui_3.mp4">
                                             <video muted autoplay loop preload="none" height="400" class="lazy-video"></video>
@@ -1096,7 +1139,7 @@
                                 ✓ 던전에서 획득 가능한 52종의 각기 다른 효과를 지닌 유물을 구현<br>
                                 <span class="projectDesc-detail">- 발동 조건을 델리게이트로 슬롯화하여 효과 발동 유무 제어</span><br>
                                 <details class="DescDetails">
-                                    <summary>더 보기 : 유물</summary>
+                                    <summary>더 보기 : 유물 스크린샷</summary>
                                     <div class="InBox">
                                         <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/twin_legacy_1.webp" data-title="twin_legacy" data-lightbox="twin_legacy">
                                             <div class="loading-spinner" style="display:none;"></div>
@@ -1115,7 +1158,7 @@
                                 ✓ 티어, 품질 등급(%), 강화 수치에 따른 능력치 변화<br>
                                 ✓ 다른 장비를 재료로 소모하는 장비 강화 기능<br>
                                 <details class="DescDetails">
-                                    <summary>더 보기 : 장비</summary>
+                                    <summary>더 보기 : 장비 강화 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/twin_equip.mp4">
                                             <video muted autoplay loop preload="none" width="260" class="lazy-video"></video>
@@ -1130,7 +1173,7 @@
                                 ✓ IAP 결제를 통해 보석, 골드, 광고제거, 각종 패키지 구매<br />
                                 ✓ 일정 시간마다 로테이션되는 카드 조각을 로테이션 기능 구현<br>
                                 <details class="DescDetails">
-                                    <summary>더 보기 : 상점</summary>
+                                    <summary>더 보기 : 상점 구현 영상</summary>
                                     <div class="InBox">
                                         <div class="video-link" vidUrl="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/movie/twin_shop.mp4">
                                             <video muted autoplay loop preload="none" width="260" class="lazy-video"></video>
@@ -1178,7 +1221,7 @@
                                 </div>
 
                                 <details class="DescDetails">
-                                    <summary>더 보기 : (에디터 기준) 전투 중 batches 디버깅창</summary>
+                                    <summary>더 보기 : (에디터 기준) 전투 중 batches 디버깅창 스크린샷</summary>
 
                                     <div class="InBox">
                                         <a href="https://cdn.jsdelivr.net/gh/memento3525/memento3525.github.io@main/img/project/twinArcana_batch.png" data-title="twinArcana_batch" data-lightbox="twinArcana_batch">
